@@ -89,10 +89,11 @@ try {
   assert.ok(process.env.CHROME_PATH,'CHROME_PATH required');
   report.chrome=execFileSync(process.env.CHROME_PATH,['--version'],{encoding:'utf8'}).trim();
   assert.ok(report.chrome.includes('145.0.7632.117'));
-  chrome=await launch({chromePath:process.env.CHROME_PATH,chromeFlags:['--headless=new','--disable-dev-shm-usage','--enable-automation']});
+  chrome=await launch({chromePath:process.env.CHROME_PATH,ignoreDefaultFlags:true,chromeFlags:['--headless=new','--disable-dev-shm-usage','--enable-automation','--disable-background-networking','--disable-extensions','--disable-sync','--no-first-run','--no-default-browser-check']});
   browser=await puppeteer.connect({browserURL:`http://127.0.0.1:${chrome.port}`});
   const session=await browser.target().createCDPSession();
   const {arguments:args}=await session.send('Browser.getBrowserCommandLine');
+  report.chrome_arguments=args;
   assert.ok(!args.some(a=>/^--(?:no-sandbox|disable-setuid-sandbox|disable-namespace-sandbox)/.test(a)));
   report.sandbox_disabled=false;report.chrome_arguments=args;
 

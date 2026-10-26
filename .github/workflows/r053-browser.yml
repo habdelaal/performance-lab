@@ -2,7 +2,7 @@ name: R053 isolated browser tracking
 on:
   push:
     branches: [qa/r053-browser]
-    paths: ['tools/r053/**', '.github/workflows/r053-browser.yml']
+    paths: ['tools/r053/**', 'tools/r052/package*.json', '.github/workflows/r053-browser.yml']
   workflow_dispatch:
 permissions:
   contents: read

@@ -54,6 +54,21 @@ try{
  await run('late_policy_after_withdrawal',async t=>{await t.attach();await t.page.click('#search');await t.page.evaluate(c=>{window.fetch=()=>new Promise(resolve=>window.resolvePolicy=()=>resolve({ok:true,json:async()=>c}));window.receiving=LFThemeClickRelayV1.receive(c);},config);await t.page.evaluate(()=>{document.dispatchEvent(new Event('optionalCookiesDenied'));window.resolvePolicy();});await t.page.evaluate(()=>window.receiving);assert.equal((await t.events()).length,0);});
  await run('denial_before_start_then_accept',async t=>{await t.attach();await t.page.click('#search');await t.page.evaluate(()=>{document.dispatchEvent(new Event('optionalCookiesDenied'));});await t.attach();await t.page.click('#view');await t.receive();assert.deepEqual((await t.events()).map(e=>e.lf_event_name),['view_route']);});
  await run('bridge_contract_admission',async t=>{await t.page.evaluate(({config,candidate,bridge})=>{const node=document.createElement('script');node.type='application/json';node.id='lf-theme-tracking-policy';node.textContent=JSON.stringify(config);document.head.appendChild(node);(0,eval)(candidate);(0,eval)(bridge);},{config,candidate,bridge});await t.page.waitForFunction(()=>window.lfThemeClickOwner==='lf-click-v1');await t.page.click('#view');await t.receive();assert.equal((await t.events()).length,1);});
+ await run('new_window_cloned_queue_no_duplicate',async t=>{
+  await t.attach();await t.page.click('#search');
+  const before=await t.page.evaluate(()=>sessionStorage.getItem(sessionStorage.key(0)));
+  const popupPromise=new Promise(resolve=>t.page.once('popup',resolve));
+  await t.page.evaluate(()=>{const b=document.createElement('button');b.id='popup-test';b.textContent='Open test window';b.onclick=()=>window.open('about:blank','_blank');document.body.appendChild(b);});
+  await t.page.click('#popup-test');const popup=await popupPromise;
+  const clone=await popup.evaluate(()=>sessionStorage.getItem(sessionStorage.key(0)));
+  assert.equal(clone,before,'Browser must actually clone sessionStorage for this regression');
+  await popup.evaluate(({relay,config})=>{window.dataLayer=[];window.fetch=async()=>({ok:true,json:async()=>config});(0,eval)(relay);}, {relay,config});
+  await Promise.all([t.receive(),popup.evaluate(c=>LFThemeClickRelayV1.receive(c),config)]);
+  const first=await t.events(),second=await popup.evaluate(()=>dataLayer.filter(e=>e.event==='lf_theme_click_v1'));
+  report.crossTab={source:first,child:second,clonedStorage:true};
+  assert.equal(first.length+second.length,1,'One user click must dispatch once across source and cloned child');
+  await popup.close();
+ });
  report.status='PASS_ISOLATED_RELAY_NOT_GTM_OR_ODOO_ACCEPTANCE';
 }catch(e){report.status='FAIL_ISOLATED_RELAY';report.error=String(e);process.exitCode=1;}
 finally{save();console.log('R056_SUMMARY '+JSON.stringify(report));if(browser)await browser.disconnect();if(chrome)await chrome.kill();}

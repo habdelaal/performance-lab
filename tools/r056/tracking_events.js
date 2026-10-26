@@ -54,7 +54,7 @@
         return true;
     }
     function flush() {
-        if (busy || stopped || !receiverReady || !admitted(readPolicy && readPolicy())) return;
+        if (busy || stopped || paused || !receiverReady || !admitted(readPolicy && readPolicy())) return;
         if (w.dataLayer === undefined) w.dataLayer = [];
         if (!Array.isArray(w.dataLayer)) return;
         busy = true;
@@ -74,7 +74,7 @@
         } finally { busy = false; }
     }
     function click(e) {
-        if (!e.isTrusted || stopped || !admitted(readPolicy())) return;
+        if (!e.isTrusted || stopped || paused || !admitted(readPolicy())) return;
         const el = e.target && e.target.closest && e.target.closest('a,button');
         if (!el || el.disabled) return;
         const names = [];

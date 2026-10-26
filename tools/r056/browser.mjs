@@ -62,8 +62,12 @@ try{
   await t.page.click('#popup-test');const popup=await popupPromise;
   const clone=await popup.evaluate(()=>sessionStorage.getItem(sessionStorage.key(0)));
   assert.equal(clone,before,'Browser must actually clone sessionStorage for this regression');
+  await popup.setRequestInterception(true);
+  popup.on('request',req=>{void req.respond({status:200,contentType:'text/html',body:'<!doctype html><title>R058 cloned child</title>'}).catch(e=>errors.push(String(e)));});
+  await popup.goto(target);
   await popup.evaluate(({relay,config})=>{window.dataLayer=[];window.fetch=async()=>({ok:true,json:async()=>config});(0,eval)(relay);}, {relay,config});
-  await Promise.all([t.receive(),popup.evaluate(c=>LFThemeClickRelayV1.receive(c),config)]);
+  const admitted=await Promise.all([t.receive(),popup.evaluate(c=>LFThemeClickRelayV1.receive(c),config)]);
+  assert.deepEqual(admitted,[true,true],'Both source and child receivers must be admitted');
   const first=await t.events(),second=await popup.evaluate(()=>dataLayer.filter(e=>e.event==='lf_theme_click_v1'));
   report.crossTab={source:first,child:second,clonedStorage:true};
   assert.equal(first.length+second.length,1,'One user click must dispatch once across source and cloned child');

@@ -1,0 +1,685 @@
+{
+  "run": "https://github.com/Runzato/performance-lab/actions/runs/40355178357",
+  "executor": "GitHub Actions sandboxed Chrome; Codex review",
+  "result": {
+    "status": "CONFIRMED_EARLY_CLICK_LOSS_NOT_ACTIVATION_ACCEPTANCE",
+    "sha": "5140ee4cfe059a00b735e5c2deb4aea984ce76ad",
+    "cases": [
+      {
+        "mode": "baseline_ready",
+        "eventName": "quote_request",
+        "requests": [
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "quote_request",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "scroll",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "quote_request",
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Get Quote",
+            "url": "https://livefreight-staging.odoo.com/cargo-insurance-egypt#/shipping-request"
+          },
+          {
+            "event": "gtm.linkClick",
+            "text": "Get Quote",
+            "url": "https://livefreight-staging.odoo.com/cargo-insurance-egypt#/shipping-request"
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "baseline_ready",
+        "eventName": "freight_search",
+        "requests": [
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "freight_search",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "scroll",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "freight_search",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Search Freight",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "baseline_ready",
+        "eventName": "view_route",
+        "requests": [
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "scroll",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "View Route",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "baseline_ready",
+        "eventName": "request_booking",
+        "requests": [
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.googletagmanager.com",
+            "path": "/a",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "request_booking",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "scroll",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "request_booking",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Request Booking",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_early",
+        "eventName": "quote_request",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": false,
+        "autoEvents": [],
+        "matchingAutoEvents": 0,
+        "expectedCount": 0,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_early",
+        "eventName": "freight_search",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": false,
+        "autoEvents": [],
+        "matchingAutoEvents": 0,
+        "expectedCount": 0,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_early",
+        "eventName": "view_route",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": false,
+        "autoEvents": [],
+        "matchingAutoEvents": 0,
+        "expectedCount": 0,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_early",
+        "eventName": "request_booking",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": false,
+        "autoEvents": [],
+        "matchingAutoEvents": 0,
+        "expectedCount": 0,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_ready",
+        "eventName": "quote_request",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "quote_request",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "quote_request",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Get Quote",
+            "url": "https://livefreight-staging.odoo.com/cargo-insurance-egypt#/shipping-request"
+          },
+          {
+            "event": "gtm.linkClick",
+            "text": "Get Quote",
+            "url": "https://livefreight-staging.odoo.com/cargo-insurance-egypt#/shipping-request"
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_ready",
+        "eventName": "freight_search",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "freight_search",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "freight_search",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Search Freight",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_ready",
+        "eventName": "view_route",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "view_route",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "View Route",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      },
+      {
+        "mode": "deferred_ready",
+        "eventName": "request_booking",
+        "requests": [
+          {
+            "host": "livefreight-staging.odoo.com",
+            "path": "/favicon.ico",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "connect.facebook.net",
+            "path": "/en_US/fbevents.js",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.clarity.ms",
+            "path": "/tag/yjd7x6ecwo",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "page_view",
+            "postEvents": []
+          },
+          {
+            "host": "stats.g.doubleclick.net",
+            "path": "/g/collect",
+            "event": null,
+            "postEvents": []
+          },
+          {
+            "host": "www.google.com",
+            "path": "/measurement/conversion",
+            "event": "request_booking",
+            "postEvents": []
+          },
+          {
+            "host": "analytics.google.com",
+            "path": "/g/collect",
+            "event": "request_booking",
+            "postEvents": []
+          }
+        ],
+        "errors": [],
+        "loadedBeforeClick": true,
+        "autoEvents": [
+          {
+            "event": "gtm.click",
+            "text": "Request Booking",
+            "url": ""
+          }
+        ],
+        "matchingAutoEvents": 1,
+        "expectedCount": 1,
+        "status": "OBSERVATION_CONFIRMED"
+      }
+    ],
+    "limits": [
+      "Synthetic HTML served inside browser at Staging URL; not actual page functionality",
+      "Published GTM script fetched once and pinned across cases; no GTM publication",
+      "All analytics collection intercepted locally, no vendor receipt acceptance",
+      "Clarity and Meta runtimes stubbed; only GTM auto-event listener timing tested",
+      "No Odoo activation, no form submission, no performance acceptance"
+    ],
+    "gtm_sha256": "cfac0fa4b8aaff446f7c1f32b0f91253d5f631b3d10d38588deef18c9b258ad1",
+    "gtm_bytes": 398245,
+    "chrome": "Google Chrome for Testing 145.0.7632.117",
+    "sandbox_disabled": false
+  }
+}

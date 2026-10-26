@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import os from 'node:os';
 import {createRequire} from 'node:module';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -36,6 +37,8 @@ export function transform(html,mode) {
   return changed;
 }
 const median=a=>{const b=[...a].sort((a,b)=>a-b);return b[Math.floor(b.length/2)];};
+const hostSnapshot=()=>({cpuModels:[...new Set(os.cpus().map(c=>c.model))],cpuCount:os.cpus().length,totalMemory:os.totalmem(),freeMemory:os.freemem(),loadAverage:os.loadavg(),platform:os.platform(),release:os.release()});
+const warmups=[];
 const rows=[];let chrome,browser,assetSignature,contentSignature;
 const limits=['Browser-only HTML/policy override, not deployed Odoo candidate',
   'Consent granted and review flag are experimental fixtures, not consent integration acceptance',
@@ -48,14 +51,18 @@ try {
   const version=execFileSync(process.env.CHROME_PATH,['--version'],{encoding:'utf8'}).trim();
   assert.ok(version.includes('145.0.7632.117'));
   const flags=['--headless=new','--disable-dev-shm-usage','--enable-automation','--disable-background-networking','--disable-extensions','--disable-sync','--no-first-run','--no-default-browser-check'];
-  save('environment.json',{target,version,node:process.version,sha:process.env.GITHUB_SHA,run_id:process.env.GITHUB_RUN_ID,source:provenance,flags,limits,started:new Date().toISOString()});
-  for(let round=1;round<=5;round++) for(const mode of round%2?['baseline','deferred']:['deferred','baseline']) {
+  save('environment.json',{protocol:'R054-warmup-host-v2',host:hostSnapshot(),warmupPolicy:'One full navigation per mode excluded from summaries; fresh Chrome/profile for every navigation',target,version,node:process.version,sha:process.env.GITHUB_SHA,run_id:process.env.GITHUB_RUN_ID,source:provenance,flags,limits,started:new Date().toISOString()});
+  for(let round=0;round<=5;round++) for(const mode of round===0||round%2?['baseline','deferred']:['deferred','baseline']) {
+    const hostBefore=hostSnapshot();
     console.log(`R054_START round=${round} mode=${mode}`);
     chrome=await launch({chromePath:process.env.CHROME_PATH,ignoreDefaultFlags:true,chromeFlags:flags});
     browser=await puppeteer.connect({browserURL:`http://127.0.0.1:${chrome.port}`});
     const page=await browser.newPage();const session=await page.createCDPSession();
     const {arguments:argv}=await session.send('Browser.getBrowserCommandLine');
     assert.ok(!argv.some(a=>/^--(?:no-sandbox|disable-setuid-sandbox|disable-namespace-sandbox)/.test(a)));
+    const documentResponses=[];
+    await session.send('Network.enable');
+    session.on('Network.responseReceived',ev=>{if(ev.type==='Document') documentResponses.push({url:ev.response.url,status:ev.response.status,timing:ev.response.timing,fromDiskCache:ev.response.fromDiskCache});});
     const errors=[],overrideErrors=[];let documents=0,policyRequests=0;
     page.on('pageerror',e=>errors.push(String(e)));
     await session.send('Fetch.enable',{patterns:[{urlPattern:target,resourceType:'Document',requestStage:'Response'},
@@ -103,15 +110,18 @@ try {
     const value=id=>{const x=lhr.audits[id].numericValue;assert.ok(Number.isFinite(x));return x;};
     const metrics={score:lhr.categories.performance.score*100,fcp_ms:value('first-contentful-paint'),lcp_ms:value('largest-contentful-paint'),tbt_ms:value('total-blocking-time'),cls:value('cumulative-layout-shift'),transfer_bytes:value('total-byte-weight')};
     const gtmTelemetry=success.filter(r=>r.url.includes('googletagmanager.com/gtm.js')&&r.statusCode===204&&new URL(r.url).searchParams.get('is_td')==='1').map(r=>({status:r.statusCode,bytes:r.resourceSize}));
-    rows.push({round,mode,metrics,vendors,gtmTelemetry,errors,warnings:lhr.runWarnings,policyRequests,state,assetSignature:sig,contentSignature:cs,fetchTime:lhr.fetchTime});save('runs.json',rows);
+    const diagnostic={benchmarkIndex:lhr.environment.benchmarkIndex,hostBefore,hostAfter:hostSnapshot(),documentResponses,bootup_ms:value('bootup-time'),mainthread_ms:value('mainthread-work-breakdown')};
+    (round===0?warmups:rows).push({diagnostic,round,mode,metrics,vendors,gtmTelemetry,errors,warnings:lhr.runWarnings,policyRequests,state,assetSignature:sig,contentSignature:cs,fetchTime:lhr.fetchTime});save('runs.json',rows);save('warmups.json',warmups);
     if(round===1) await page.screenshot({path:new URL(`${mode}.png`,out).pathname,fullPage:true});
-    console.log(`R054_RESULT ${JSON.stringify({round,mode,metrics,vendors,errors,warnings:lhr.runWarnings})}`);
+    console.log(`R054_RESULT ${JSON.stringify({round,mode,benchmarkIndex:diagnostic.benchmarkIndex,metrics,vendors,errors,warnings:lhr.runWarnings})}`);
     await session.detach();await browser.disconnect();browser=null;await chrome.kill();chrome=null;
   }
   const keys=Object.keys(rows[0].metrics);
   const summaries=Object.fromEntries(['baseline','deferred'].map(mode=>[mode,Object.fromEntries(keys.map(k=>{const a=rows.filter(r=>r.mode===mode).map(r=>r.metrics[k]);return [k,{median:median(a),min:Math.min(...a),max:Math.max(...a)}];}))]));
   const paired=Object.fromEntries(keys.map(k=>[k,median(rows.filter(x=>x.mode==='baseline').map(a=>a.metrics[k]-rows.find(b=>b.round===a.round&&b.mode==='deferred').metrics[k]))]));
-  const summary={status:'MEASURED_BROWSER_OVERRIDE_NOT_DEPLOYMENT_ACCEPTANCE',summaries,paired_baseline_minus_deferred:paired,limits};
+  const benchmarks=rows.map(r=>r.diagnostic.benchmarkIndex);
+  const executionDiagnostics={benchmarkMin:Math.min(...benchmarks),benchmarkMax:Math.max(...benchmarks),benchmarkMedian:median(benchmarks),warmupCount:warmups.length,note:'No outlier filtering or score normalization; document timing after interception is diagnostic, not authoritative origin TTFB'};
+  const summary={executionDiagnostics,status:'MEASURED_BROWSER_OVERRIDE_NOT_DEPLOYMENT_ACCEPTANCE',summaries,paired_baseline_minus_deferred:paired,limits};
   save('summary.json',summary);console.log('R054_SUMMARY '+JSON.stringify(summary));
 } catch(e) {save('failure.json',{status:'BLOCKED_OR_INVALID',error:String(e),stack:e.stack,completed:rows.length});console.error(e);process.exitCode=1;}
 finally {if(browser) await browser.disconnect();if(chrome) await chrome.kill();}

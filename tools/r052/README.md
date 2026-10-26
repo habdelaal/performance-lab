@@ -56,14 +56,3 @@ until the manual job completes successfully.
 
 Cancel the job or disable/revert this workflow to stop the experiment.
 No Odoo upgrade or database rollback is required.
-
-## Runner compatibility correction — 26 October 2026
-
-Run40300118966 installed Chrome145.0.7632.117 and passed all5 source tests,
-but aborted before any Lighthouse run with `No usable sandbox` on Ubuntu24.04.
-The runner now uses GitHub-hosted Ubuntu22.04, retaining default Chrome sandbox
-and fail-closed preflight; no AppArmor/sysctl changes or --no-sandbox flag.
-Ubuntu22.04 is supported by GitHub; actual sandbox readiness remains NOT RUN
-until a new manual dispatch passes. This run provides no performance measurements.
-References: https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md
-and https://docs.github.com/en/actions/reference/runners/github-hosted-runners .

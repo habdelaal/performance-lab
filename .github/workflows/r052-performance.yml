@@ -1,0 +1,44 @@
+name: R052 tracking comparison
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: r052-performance
+  cancel-in-progress: false
+jobs:
+  compare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22.14.0'
+      - name: Install pinned Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4 # v2.2.0
+        with:
+          chrome-version: '145.0.7632.116'
+      - name: Install locked Lighthouse dependencies
+        working-directory: tools/r052
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Source checks
+        working-directory: tools/r052
+        run: node --test compare.test.mjs
+      - name: Sandbox preflight and five paired mobile runs
+        working-directory: tools/r052
+        env:
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: node compare.mjs
+      - name: Preserve reports including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: r052-${{ github.run_id }}-${{ github.run_attempt }}
+          path: tools/r052/reports/
+          if-no-files-found: warn
+          retention-days: 14

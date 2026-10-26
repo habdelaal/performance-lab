@@ -1,0 +1,309 @@
+{
+  "theme_commit": "d563959ffdd6b80b30a2ce8cd386fa3911529950",
+  "run": "https://github.com/Runzato/performance-lab/actions/runs/40358668162",
+  "result": {
+    "status": "PASS_ISOLATED_RELAY_NOT_GTM_OR_ODOO_ACCEPTANCE",
+    "sha": "c1a95f356a5c352e73a537535d9f452689054908",
+    "sourceHashes": {
+      "relay": "e859ea2601f423396a0d9c6e9282948eb796ad9a2f29ea1a0d5253b597197ce8",
+      "bridge": "26c32c3b7bd358afa1e4218038107912e986113a5509d094c817184621c3d910",
+      "candidate": "52cbdb5e9577825f8dd1f326baf8ab8284462efc7f572429ecbb8408cc4c98d8"
+    },
+    "cases": [
+      {
+        "name": "early_freight_search",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "freight_search",
+            "lf_event_id": "8d1823a1-4b90-4655-8c95-87ba639efa40",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "early_view_route",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "view_route",
+            "lf_event_id": "6cb9f810-0a81-4fac-bf17-a745a6147caf",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "early_request_booking",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "request_booking",
+            "lf_event_id": "f30c10c9-5ce7-4694-9e33-a508f403ac86",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "quote_cross_document",
+        "status": "PASS",
+        "state": {
+          "captured": 0,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": false,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "repeated_clicks_distinct_ids",
+        "status": "PASS",
+        "state": {
+          "captured": 2,
+          "dispatched": 2,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "freight_search",
+            "lf_event_id": "a0dc921c-7358-4607-acc1-b32c274069e9",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          },
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "freight_search",
+            "lf_event_id": "19019ecd-f9bb-4a2f-89aa-9439dad5b3fa",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "synthetic_click_not_captured",
+        "status": "PASS",
+        "state": {
+          "captured": 0,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "withdraw_pending",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": false,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "policy_denial_at_destination",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": false,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "policy_failure_then_valid_retry",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "freight_search",
+            "lf_event_id": "809a04f3-d4d3-49d9-9125-8c73aafb80d3",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "wrong_website",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": false,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "expired_queue",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "no_form_or_query_values",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "freight_search",
+            "lf_event_id": "fb426651-94ed-4eb0-9e27-3d2356e872fe",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "storage_unavailable_no_ownership",
+        "status": "PASS",
+        "state": {
+          "captured": 0,
+          "dispatched": 0,
+          "storageFailed": true,
+          "owner": false,
+          "stopped": false,
+          "receiverReady": false,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "late_policy_after_withdrawal",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 0,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": false,
+          "pending": 0
+        },
+        "events": []
+      },
+      {
+        "name": "denial_before_start_then_accept",
+        "status": "PASS",
+        "state": {
+          "captured": 2,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "view_route",
+            "lf_event_id": "bae89b26-2e1e-476a-81c7-465c63cf3d77",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      },
+      {
+        "name": "bridge_contract_admission",
+        "status": "PASS",
+        "state": {
+          "captured": 1,
+          "dispatched": 1,
+          "storageFailed": false,
+          "owner": true,
+          "stopped": false,
+          "receiverReady": true,
+          "pending": 0
+        },
+        "events": [
+          {
+            "event": "lf_theme_click_v1",
+            "lf_event_name": "view_route",
+            "lf_event_id": "5d9cbfd7-796b-4887-9d6b-d491904be291",
+            "lf_source_location": "https://livefreight-staging.odoo.com/cargo-insurance-egypt"
+          }
+        ]
+      }
+    ],
+    "limits": [
+      "Isolated browser with mocked GTM consumer, not imported container acceptance",
+      "No real analytics requests, no Odoo activation",
+      "At-most-once dataLayer dispatch, not server receipt guarantee",
+      "Cross-tab/new-window delivery not accepted"
+    ],
+    "chrome": "Google Chrome for Testing 145.0.7632.117",
+    "sandbox_disabled": false
+  }
+}

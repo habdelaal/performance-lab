@@ -80,7 +80,7 @@ try {
     assert.deepEqual(overrideErrors,[]);assert.equal(documents,1);assert.ok(!lhr.runtimeError,JSON.stringify(lhr.runtimeError));assert.equal(lhr.finalDisplayedUrl,target);
     const all=lhr.audits['network-requests'].details.items;
     const success=all.filter(r=>r.statusCode>=200&&r.statusCode<400);
-    const count=(host,path)=>success.filter(r=>{const u=new URL(r.url);return u.hostname===host&&u.pathname===path;}).length;
+    const count=(host,path)=>success.filter(r=>{const u=new URL(r.url);return u.hostname===host&&u.pathname===path&&r.statusCode===200&&r.resourceSize>0&&/javascript/.test(r.mimeType||'');}).length;
     const vendors={gtm:count('www.googletagmanager.com','/gtm.js'),meta:count('connect.facebook.net','/en_US/fbevents.js'),clarity:success.filter(r=>/clarity\.ms\/tag\//.test(r.url)).length};
     assert.equal(vendors.gtm,1,'GTM must load once within measured navigation');assert.equal(vendors.meta,1,'Meta must load once within measured navigation');assert.ok(vendors.clarity>=1,'Clarity must not be silently excluded');
     const state=await page.evaluate(()=>({
@@ -90,7 +90,7 @@ try {
       images:[...document.images].map(x=>({src:x.getAttribute('src'),alt:x.alt})),
       status:window[Symbol.for('lf.theme.tracking.bridge')]?.status(),
       gtmStarts:window.dataLayer?.filter(x=>x?.event==='gtm.js').length,
-      scriptCounts:{gtm:[...document.scripts].filter(x=>x.src.includes('googletagmanager.com/gtm.js')).length,meta:[...document.scripts].filter(x=>x.src.includes('connect.facebook.net/en_US/fbevents.js')).length},
+      scriptCounts:{gtm:[...document.scripts].filter(x=>x.src.includes('googletagmanager.com/gtm.js')&&!new URL(x.src).searchParams.has('is_td')).length,meta:[...document.scripts].filter(x=>x.src.includes('connect.facebook.net/en_US/fbevents.js')).length},
     }));
     assert.equal(state.scriptCounts.gtm,1);assert.equal(state.scriptCounts.meta,1);assert.equal(state.gtmStarts,1);
     if(mode==='deferred') {assert.equal(policyRequests,1);assert.equal(state.status.google,'script_loaded');assert.equal(state.status.meta,'script_loaded');}
@@ -102,7 +102,8 @@ try {
     const cs=hash(JSON.stringify(content));contentSignature??=cs;assert.equal(cs,contentSignature,'Rendered page structure drift');
     const value=id=>{const x=lhr.audits[id].numericValue;assert.ok(Number.isFinite(x));return x;};
     const metrics={score:lhr.categories.performance.score*100,fcp_ms:value('first-contentful-paint'),lcp_ms:value('largest-contentful-paint'),tbt_ms:value('total-blocking-time'),cls:value('cumulative-layout-shift'),transfer_bytes:value('total-byte-weight')};
-    rows.push({round,mode,metrics,vendors,errors,warnings:lhr.runWarnings,policyRequests,state,assetSignature:sig,contentSignature:cs,fetchTime:lhr.fetchTime});save('runs.json',rows);
+    const gtmTelemetry=success.filter(r=>r.url.includes('googletagmanager.com/gtm.js')&&r.statusCode===204&&new URL(r.url).searchParams.get('is_td')==='1').map(r=>({status:r.statusCode,bytes:r.resourceSize}));
+    rows.push({round,mode,metrics,vendors,gtmTelemetry,errors,warnings:lhr.runWarnings,policyRequests,state,assetSignature:sig,contentSignature:cs,fetchTime:lhr.fetchTime});save('runs.json',rows);
     if(round===1) await page.screenshot({path:new URL(`${mode}.png`,out).pathname,fullPage:true});
     console.log(`R054_RESULT ${JSON.stringify({round,mode,metrics,vendors,errors,warnings:lhr.runWarnings})}`);
     await session.detach();await browser.disconnect();browser=null;await chrome.kill();chrome=null;

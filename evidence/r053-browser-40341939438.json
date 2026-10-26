@@ -1,0 +1,400 @@
+{
+  "status": "PASS_BROWSER_FIXTURE_NOT_VENDOR_ACCEPTANCE",
+  "scope": "browser_fixture_with_stubbed_vendors",
+  "source": {
+    "repository": "EIT-Hub/freightforwarder",
+    "commit": "3bd41efd0141a705ff50d5bf824e9cea9d1bc133",
+    "files": {
+      "tracking_candidate": "52cbdb5e9577825f8dd1f326baf8ab8284462efc7f572429ecbb8408cc4c98d8",
+      "tracking_bridge": "9d93750c9794503dbbdb0503b75d903f28a2a3ca36874f9702ddbd346b49ca6e"
+    }
+  },
+  "sha": "de64629d4ac579f272dd3c3d3cc28ba45591e5d5",
+  "cases": [
+    {
+      "name": "denied_startup",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "accepted_timer_once",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "google",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-R053TEST",
+          "time": 1793025709867
+        },
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025709868
+        }
+      ],
+      "policy_requests": 2,
+      "final_state": {
+        "google": "script_loaded",
+        "meta": "script_loaded",
+        "started": true,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": [
+        [
+          "meta",
+          "init",
+          "1234567890"
+        ],
+        [
+          "meta",
+          "track",
+          "PageView"
+        ],
+        [
+          "meta",
+          "consent",
+          "grant"
+        ],
+        [
+          "clarity",
+          "consentv2",
+          {
+            "ad_Storage": "granted",
+            "analytics_Storage": "granted"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "accepted_interaction_once",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "google",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-R053TEST",
+          "time": 1793025711987
+        },
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025711988
+        }
+      ],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "script_loaded",
+        "meta": "script_loaded",
+        "started": true,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": [
+        [
+          "meta",
+          "init",
+          "1234567890"
+        ],
+        [
+          "meta",
+          "track",
+          "PageView"
+        ]
+      ]
+    },
+    {
+      "name": "deny_then_accept",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "google",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-R053TEST",
+          "time": 1793025712509
+        },
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025712509
+        }
+      ],
+      "policy_requests": 2,
+      "final_state": {
+        "google": "script_loaded",
+        "meta": "script_loaded",
+        "started": true,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": [
+        [
+          "meta",
+          "init",
+          "1234567890"
+        ],
+        [
+          "meta",
+          "track",
+          "PageView"
+        ]
+      ]
+    },
+    {
+      "name": "withdraw_before_start",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "withdraw_after_start",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "google",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-R053TEST",
+          "time": 1793025714931
+        },
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025714932
+        }
+      ],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "stopped",
+        "meta": "stopped",
+        "started": true,
+        "stopped": true,
+        "reloadRequired": true,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": [
+        [
+          "meta",
+          "init",
+          "1234567890"
+        ],
+        [
+          "meta",
+          "track",
+          "PageView"
+        ],
+        [
+          "meta",
+          "consent",
+          "revoke"
+        ],
+        [
+          "clarity",
+          "consentv2",
+          {
+            "ad_Storage": "denied",
+            "analytics_Storage": "denied"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "policy_http_failure",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "policy_identity_mismatch",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "existing_loader",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "existing_loader",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "excluded_context",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "policy_not_admitted",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "off_context",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 0,
+      "calls": []
+    },
+    {
+      "name": "stale_response_after_denial",
+      "status": "PASS",
+      "requests": [],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "waiting",
+        "meta": "waiting",
+        "started": false,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    },
+    {
+      "name": "provider_exclusion",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025729970
+        }
+      ],
+      "policy_requests": 1,
+      "final_state": {
+        "google": "excluded",
+        "meta": "script_loaded",
+        "started": true,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": [
+        [
+          "meta",
+          "init",
+          "1234567890"
+        ],
+        [
+          "meta",
+          "track",
+          "PageView"
+        ]
+      ]
+    },
+    {
+      "name": "vendor_failure_no_retry",
+      "status": "PASS",
+      "requests": [
+        {
+          "provider": "google",
+          "url": "https://www.googletagmanager.com/gtm.js?id=GTM-R053TEST",
+          "time": 1793025730808
+        },
+        {
+          "provider": "meta",
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "time": 1793025730809
+        }
+      ],
+      "policy_requests": 2,
+      "final_state": {
+        "google": "failed",
+        "meta": "failed",
+        "started": true,
+        "stopped": false,
+        "reloadRequired": false,
+        "reason": "",
+        "queued": 0
+      },
+      "calls": []
+    }
+  ],
+  "limits": [
+    "No Staging writes or activation",
+    "No live vendor code/events/conversions",
+    "No durable Odoo assets acceptance",
+    "No performance or physical Safari acceptance"
+  ],
+  "chrome": "Google Chrome for Testing 145.0.7632.117",
+  "chrome_arguments": [
+    "/opt/hostedtoolcache/setup-chrome/chrome/145.0.7632.117/x64/chrome",
+    "--remote-debugging-port=0",
+    "--user-data-dir=/tmp/lighthouse.CRAEyKK",
+    "--headless=new",
+    "--disable-dev-shm-usage",
+    "--enable-automation",
+    "--disable-background-networking",
+    "--disable-extensions",
+    "--disable-sync",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--noerrdialogs",
+    "--ozone-platform=headless",
+    "--ozone-override-screen-size=800,600",
+    "--use-angle=swiftshader-webgl",
+    "--flag-switches-begin",
+    "--flag-switches-end",
+    "about:blank"
+  ],
+  "sandbox_disabled": false
+}

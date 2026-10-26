@@ -23,7 +23,7 @@ Check organization allowance before running. The job has read-only contents
 permission, a 30-minute timeout and no overlapping R052 runs. Reports expire
 in14 days; preserve accepted results before expiry.
 
-Versions are pinned: Node22.14.0, Lighthouse12.8.2, Chrome145.0.7632.116,
+Versions are pinned: Node22.14.0, Lighthouse12.8.2, Chrome145.0.7632.117,
 action commit SHAs and npm integrity lock. Ubuntu image version is recorded.
 The first gate requires successful Chrome launch with its sandbox enabled.
 There is no --no-sandbox fallback, AppArmor/sysctl change or privilege workaround.

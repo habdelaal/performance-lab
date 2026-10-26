@@ -49,7 +49,7 @@ async function main() {
     if(response.status!==200 || !response.headers.get('content-type')?.includes('text/html')) throw Error('Staging preflight returned redirect/error/non-HTML');
     await response.body.cancel();
     const version=execFileSync(chrome,['--version'],{encoding:'utf8'}).trim();
-    if (!version.includes('145.0.7632.116')) throw Error('Unexpected Chrome version');
+    if (!version.includes('145.0.7632.117')) throw Error('Unexpected Chrome version');
     const flags=['--headless=new','--disable-dev-shm-usage'];
     // Fail closed if Chrome cannot launch with its default sandbox enabled.
     const probe=execFileSync(chrome,[...flags,'--dump-dom','about:blank'],{encoding:'utf8',timeout:30000});

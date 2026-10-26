@@ -7,7 +7,7 @@
     if (w[NAME]) return;
     const VERSION = 'lf-click-v1', TTL = 300000, MAX = 50;
     const EVENTS = ['quote_request', 'freight_search', 'view_route', 'request_booking'];
-    let revision = 0;
+    let revision = 0, paused = false;
     let owner = false, stopped = false, busy = false, receiverReady = false;
     let config, readPolicy, memory = { pending: [], sent: [] }, storageKey;
     const state = { captured: 0, dispatched: 0, storageFailed: false };
@@ -98,8 +98,9 @@
     }
     function attach(c, policyReader) {
         if (stopped) return false;
-        if (owner) return true;
         if (!setup(c) || typeof policyReader !== 'function' || !admitted(policyReader())) return false;
+        paused = false;
+        if (owner) return true;
         readPolicy = policyReader;
         // Verify persistence before taking ownership; no hidden in-memory-only success.
         load(); persist();
@@ -109,7 +110,7 @@
         return true;
     }
     async function receive(c) {
-        if (!setup(c) || stopped) return false;
+        if (!setup(c) || stopped || paused) return false;
         const ownRevision = revision;
         const ownPolicyReader = readPolicy;
         try {
@@ -124,7 +125,7 @@
         } catch (_) { return false; }
     }
     function pause() {
-        revision++; receiverReady = false;
+        revision++; paused = true; receiverReady = false;
         if (storageKey) clear();
     }
     function stop() {

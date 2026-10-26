@@ -10,6 +10,7 @@
     let revision = 0, paused = false;
     let owner = false, stopped = false, busy = false, receiverReady = false;
     let config, readPolicy, memory = { pending: [], sent: [] }, storageKey;
+    let flushing = null;
     const state = { captured: 0, dispatched: 0, storageFailed: false };
     function admitted(p) {
         return p && p.enabled === true && p.consent === 'granted' &&
@@ -54,16 +55,32 @@
         return true;
     }
     function flush() {
-        if (busy || stopped || paused || !receiverReady || !admitted(readPolicy && readPolicy())) return;
+        if (flushing) return flushing;
+        if (stopped || paused || !receiverReady || !admitted(readPolicy && readPolicy())) return Promise.resolve();
         if (w.dataLayer === undefined) w.dataLayer = [];
-        if (!Array.isArray(w.dataLayer)) return;
-        busy = true;
-        try {
+        if (!Array.isArray(w.dataLayer) || !w.navigator.locks) return Promise.resolve();
+        const ownRevision = revision;
+        // One shared claim per origin/site/container. The session queue alone is
+        // insufficient: a new window can inherit an independent copy of it.
+        flushing = w.navigator.locks.request(storageKey + '.claims', () => {
+            if (stopped || paused || revision !== ownRevision || !admitted(readPolicy())) return;
+            const key = storageKey + '.claims';
+            const raw = w.localStorage.getItem(key);
+            let claims = raw ? JSON.parse(raw) : [];
+            if (!Array.isArray(claims)) throw new Error('Invalid claim ledger');
+            claims = claims.filter(fresh);
             load();
-            while (memory.pending.length && admitted(readPolicy())) {
-                const event = memory.pending.shift();
-                if (memory.sent.some(x => x.id === event.id)) continue;
-                // Claim before dispatch. Do not retry an ambiguous vendor outcome.
+            while (memory.pending.length && !stopped && !paused && admitted(readPolicy())) {
+                const event = memory.pending[0];
+                if (claims.some(x => x.id === event.id) || memory.sent.some(x => x.id === event.id)) {
+                    memory.pending.shift(); continue;
+                }
+                // Never evict an unexpired claim: prefer a bounded pending queue
+                // to redispatching an event whose vendor outcome is unknown.
+                if (claims.length >= MAX * 4) break;
+                claims.push({ id: event.id, at: event.at });
+                w.localStorage.setItem(key, JSON.stringify(claims));
+                memory.pending.shift();
                 memory.sent.push({ id: event.id, at: event.at });
                 memory.sent = memory.sent.slice(-MAX * 4); persist();
                 w.dataLayer.push({ event: 'lf_theme_click_v1', lf_event_name: event.name,
@@ -71,7 +88,8 @@
                 state.dispatched++;
             }
             persist();
-        } finally { busy = false; }
+        }).catch(() => { state.storageFailed = true; }).finally(() => { flushing = null; });
+        return flushing;
     }
     function click(e) {
         if (!e.isTrusted || stopped || paused || !admitted(readPolicy())) return;
@@ -99,6 +117,11 @@
     function attach(c, policyReader) {
         if (stopped) return false;
         if (!setup(c) || typeof policyReader !== 'function' || !admitted(policyReader())) return false;
+        if (!w.navigator.locks || typeof w.navigator.locks.request !== 'function') return false;
+        try {
+            const probe = storageKey + '.probe.' + w.crypto.randomUUID();
+            w.localStorage.setItem(probe, '1'); w.localStorage.removeItem(probe);
+        } catch (_) { state.storageFailed = true; return false; }
         paused = false;
         if (owner) return true;
         readPolicy = policyReader;
@@ -121,7 +144,7 @@
             if (!admitted(p)) { clear(); return false; }
             // Source retains its live reader for withdrawal/revalidation handling.
             if (!ownPolicyReader) readPolicy = () => p;
-            receiverReady = true; flush(); return true;
+            receiverReady = true; await flush(); return !state.storageFailed;
         } catch (_) { return false; }
     }
     function pause() {

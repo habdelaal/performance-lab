@@ -25,7 +25,10 @@
         revision++;
         withdrawn = controller.status().started;
         policy = { ...policy, consent: 'denied' };
-        if (w.LFThemeClickRelayV1) w.LFThemeClickRelayV1.stop();
+        if (w.LFThemeClickRelayV1) {
+            if (withdrawn) w.LFThemeClickRelayV1.stop();
+            else w.LFThemeClickRelayV1.pause();
+        }
         publishConsent('denied');
         if (withdrawn) controller.stop();
         else controller.pause();

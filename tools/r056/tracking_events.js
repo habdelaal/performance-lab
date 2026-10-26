@@ -7,6 +7,7 @@
     if (w[NAME]) return;
     const VERSION = 'lf-click-v1', TTL = 300000, MAX = 50;
     const EVENTS = ['quote_request', 'freight_search', 'view_route', 'request_booking'];
+    let revision = 0;
     let owner = false, stopped = false, busy = false, receiverReady = false;
     let config, readPolicy, memory = { pending: [], sent: [] }, storageKey;
     const state = { captured: 0, dispatched: 0, storageFailed: false };
@@ -96,6 +97,7 @@
         persist(); flush();
     }
     function attach(c, policyReader) {
+        if (stopped) return false;
         if (owner) return true;
         if (!setup(c) || typeof policyReader !== 'function' || !admitted(policyReader())) return false;
         readPolicy = policyReader;
@@ -108,25 +110,29 @@
     }
     async function receive(c) {
         if (!setup(c) || stopped) return false;
+        const ownRevision = revision;
         const ownPolicyReader = readPolicy;
         try {
             const response = await w.fetch('/lf-theme/tracking-policy', { credentials: 'same-origin', cache: 'no-store' });
             if (!response.ok) throw new Error('Policy unavailable');
             const p = await response.json();
-            if (stopped) return false;
+            if (stopped || ownRevision !== revision) return false;
             if (!admitted(p)) { clear(); return false; }
             // Source retains its live reader for withdrawal/revalidation handling.
             if (!ownPolicyReader) readPolicy = () => p;
             receiverReady = true; flush(); return true;
         } catch (_) { return false; }
     }
-    function stop() {
-        stopped = true; receiverReady = false;
+    function pause() {
+        revision++; receiverReady = false;
         if (storageKey) clear();
+    }
+    function stop() {
+        stopped = true; pause();
         d.removeEventListener('click', click, true);
         // Keep ownership marker: falling back to native tags after denial is unsafe.
     }
-    d.addEventListener('optionalCookiesDenied', stop);
-    w[NAME] = Object.freeze({ attach, receive, stop,
+    d.addEventListener('optionalCookiesDenied', pause);
+    w[NAME] = Object.freeze({ attach, receive, stop, pause,
         status: () => ({ ...state, owner, stopped, receiverReady, pending: memory.pending.length }) });
 })(window, document);

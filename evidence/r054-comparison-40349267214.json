@@ -1,0 +1,488 @@
+{
+  "environment.json": {
+    "target": "https://livefreight-staging.odoo.com/cargo-insurance-egypt",
+    "version": "Google Chrome for Testing 145.0.7632.117",
+    "node": "v22.14.0",
+    "sha": "bcf00d7d926186f9869ac4c4e34909b92a6e2b2c",
+    "run_id": "40349267214",
+    "source": {
+      "repository": "EIT-Hub/freightforwarder",
+      "commit": "3bd41efd0141a705ff50d5bf824e9cea9d1bc133",
+      "files": {
+        "tracking_candidate": "52cbdb5e9577825f8dd1f326baf8ab8284462efc7f572429ecbb8408cc4c98d8",
+        "tracking_bridge": "9d93750c9794503dbbdb0503b75d903f28a2a3ca36874f9702ddbd346b49ca6e"
+      }
+    },
+    "flags": [
+      "--headless=new",
+      "--disable-dev-shm-usage",
+      "--enable-automation",
+      "--disable-background-networking",
+      "--disable-extensions",
+      "--disable-sync",
+      "--no-first-run",
+      "--no-default-browser-check"
+    ],
+    "limits": [
+      "Browser-only HTML/policy override, not deployed Odoo candidate",
+      "Consent granted and review flag are experimental fixtures, not consent integration acceptance",
+      "Live vendor scripts retained; no Clarity exclusion change",
+      "Synthetic page visits may reach analytics; no form submission or conversion action",
+      "Shared first-party assets and visible page structure checked; full journeys not tested",
+      "Lab mobile simulation, not physical devices or field CWV"
+    ],
+    "started": "2026-10-26T15:26:36.587Z"
+  },
+  "summary.json": {
+    "status": "MEASURED_BROWSER_OVERRIDE_NOT_DEPLOYMENT_ACCEPTANCE",
+    "summaries": {
+      "baseline": {
+        "score": {
+          "median": 47,
+          "min": 44,
+          "max": 52
+        },
+        "fcp_ms": {
+          "median": 3466.698857603121,
+          "min": 3463.2368576031167,
+          "max": 3470.9918576031064
+        },
+        "lcp_ms": {
+          "median": 4683.94771628019,
+          "min": 3913.2368576031167,
+          "max": 4983.670644330037
+        },
+        "tbt_ms": {
+          "median": 2019,
+          "min": 1835.000000000001,
+          "max": 2054.5
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "transfer_bytes": {
+          "median": 2156360,
+          "min": 2156221,
+          "max": 2156553
+        }
+      },
+      "deferred": {
+        "score": {
+          "median": 53,
+          "min": 52,
+          "max": 54
+        },
+        "fcp_ms": {
+          "median": 3467.665442668777,
+          "min": 3465.0730533359856,
+          "max": 3473.479053335979
+        },
+        "lcp_ms": {
+          "median": 3916.8478853375577,
+          "min": 3768.1930533359664,
+          "max": 3923.479053335979
+        },
+        "tbt_ms": {
+          "median": 1681.9999999999982,
+          "min": 1521,
+          "max": 2119.5
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "transfer_bytes": {
+          "median": 2166112,
+          "min": 2165685,
+          "max": 2166143
+        }
+      }
+    },
+    "paired_baseline_minus_deferred": {
+      "score": -6,
+      "fcp_ms": -0.6208860345868743,
+      "lcp_ms": 813.1849877436484,
+      "tbt_ms": 372.5000000000018,
+      "cls": 0,
+      "transfer_bytes": -9706
+    },
+    "limits": [
+      "Browser-only HTML/policy override, not deployed Odoo candidate",
+      "Consent granted and review flag are experimental fixtures, not consent integration acceptance",
+      "Live vendor scripts retained; no Clarity exclusion change",
+      "Synthetic page visits may reach analytics; no form submission or conversion action",
+      "Shared first-party assets and visible page structure checked; full journeys not tested",
+      "Lab mobile simulation, not physical devices or field CWV"
+    ]
+  },
+  "runs.json": [
+    {
+      "round": 1,
+      "mode": "baseline",
+      "metrics": {
+        "score": 44,
+        "fcp_ms": 3466.226999302971,
+        "lcp_ms": 3916.226999302971,
+        "tbt_ms": 2037.9999999999982,
+        "cls": 0,
+        "transfer_bytes": 2156221
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 0,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:26:39.664Z",
+      "runtime_state": {
+        "status": null,
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 1,
+      "mode": "deferred",
+      "metrics": {
+        "score": 54,
+        "fcp_ms": 3466.8478853375577,
+        "lcp_ms": 3916.8478853375577,
+        "tbt_ms": 1521,
+        "cls": 0,
+        "transfer_bytes": 2166143
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 1,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:27:03.532Z",
+      "runtime_state": {
+        "status": {
+          "google": "script_loaded",
+          "meta": "script_loaded",
+          "started": true,
+          "stopped": false,
+          "reloadRequired": false,
+          "reason": "",
+          "queued": 0
+        },
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 2,
+      "mode": "deferred",
+      "metrics": {
+        "score": 54,
+        "fcp_ms": 3468.1930533359664,
+        "lcp_ms": 3768.1930533359664,
+        "tbt_ms": 1958.8925266679835,
+        "cls": 0,
+        "transfer_bytes": 2165685
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 1,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:27:20.502Z",
+      "runtime_state": {
+        "status": {
+          "google": "script_loaded",
+          "meta": "script_loaded",
+          "started": true,
+          "stopped": false,
+          "reloadRequired": false,
+          "reason": "",
+          "queued": 0
+        },
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 2,
+      "mode": "baseline",
+      "metrics": {
+        "score": 48,
+        "fcp_ms": 3466.698857603121,
+        "lcp_ms": 4683.94771628019,
+        "tbt_ms": 1835.000000000001,
+        "cls": 0,
+        "transfer_bytes": 2156311
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 0,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:27:37.130Z",
+      "runtime_state": {
+        "status": null,
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 3,
+      "mode": "baseline",
+      "metrics": {
+        "score": 47,
+        "fcp_ms": 3470.9918576031064,
+        "lcp_ms": 4730.850430412425,
+        "tbt_ms": 1990.4999999999973,
+        "cls": 0,
+        "transfer_bytes": 2156360
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 0,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:27:54.298Z",
+      "runtime_state": {
+        "status": null,
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 3,
+      "mode": "deferred",
+      "metrics": {
+        "score": 52,
+        "fcp_ms": 3467.665442668777,
+        "lcp_ms": 3917.665442668777,
+        "tbt_ms": 2119.5,
+        "cls": 0,
+        "transfer_bytes": 2166078
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 1,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:28:11.224Z",
+      "runtime_state": {
+        "status": {
+          "google": "script_loaded",
+          "meta": "script_loaded",
+          "started": true,
+          "stopped": false,
+          "reloadRequired": false,
+          "reason": "",
+          "queued": 0
+        },
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 4,
+      "mode": "deferred",
+      "metrics": {
+        "score": 53,
+        "fcp_ms": 3465.0730533359856,
+        "lcp_ms": 3915.0730533359856,
+        "tbt_ms": 1558.499999999999,
+        "cls": 0,
+        "transfer_bytes": 2166112
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 1,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:28:27.416Z",
+      "runtime_state": {
+        "status": {
+          "google": "script_loaded",
+          "meta": "script_loaded",
+          "started": true,
+          "stopped": false,
+          "reloadRequired": false,
+          "reason": "",
+          "queued": 0
+        },
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 4,
+      "mode": "baseline",
+      "metrics": {
+        "score": 45,
+        "fcp_ms": 3468.279429123764,
+        "lcp_ms": 4983.670644330037,
+        "tbt_ms": 2019,
+        "cls": 0,
+        "transfer_bytes": 2156406
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 0,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:28:43.943Z",
+      "runtime_state": {
+        "status": null,
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 5,
+      "mode": "baseline",
+      "metrics": {
+        "score": 52,
+        "fcp_ms": 3463.2368576031167,
+        "lcp_ms": 3913.2368576031167,
+        "tbt_ms": 2054.5,
+        "cls": 0,
+        "transfer_bytes": 2156553
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 0,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:29:01.769Z",
+      "runtime_state": {
+        "status": null,
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    },
+    {
+      "round": 5,
+      "mode": "deferred",
+      "metrics": {
+        "score": 53,
+        "fcp_ms": 3473.479053335979,
+        "lcp_ms": 3923.479053335979,
+        "tbt_ms": 1681.9999999999982,
+        "cls": 0,
+        "transfer_bytes": 2166132
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "gtmTelemetry": [],
+      "errors": [],
+      "warnings": [],
+      "policyRequests": 1,
+      "assetSignature": "768fb0939eb380cd19e2bc445f2b3044721c06c50c3e194b898eb45ddcd9e071",
+      "contentSignature": "71c700f2831155c459480f4ce4e06792739383d5af12b2d6a7a5eb2c681a3098",
+      "fetchTime": "2026-10-26T15:29:19.073Z",
+      "runtime_state": {
+        "status": {
+          "google": "script_loaded",
+          "meta": "script_loaded",
+          "started": true,
+          "stopped": false,
+          "reloadRequired": false,
+          "reason": "",
+          "queued": 0
+        },
+        "gtmStarts": 1,
+        "scriptCounts": {
+          "gtm": 1,
+          "meta": 1
+        }
+      }
+    }
+  ],
+  "artifact": {
+    "id": 12662503500,
+    "zip_sha256": "a577d57825143e5f92f807bf984a3eb318715b7d3f11c6503feaeb3deb56bafa",
+    "run_url": "https://github.com/Runzato/performance-lab/actions/runs/40349267214"
+  }
+}

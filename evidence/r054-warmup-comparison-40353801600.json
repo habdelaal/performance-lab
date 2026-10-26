@@ -1,0 +1,343 @@
+{
+  "executor": "GitHub Actions sandboxed Chrome; reviewed by Codex",
+  "run": "https://github.com/Runzato/performance-lab/actions/runs/40353801600",
+  "tested_commit": "d1220d52dc30673e30d7ef7542b3b3a852b384ad",
+  "evidence_source": "completed workflow logs; raw LHRs retained in Actions artifact",
+  "warmups": [
+    {
+      "round": 0,
+      "mode": "baseline",
+      "benchmarkIndex": 2917.5,
+      "metrics": {
+        "score": 60,
+        "fcp_ms": 3297.7641426579885,
+        "lcp_ms": 3597.7641426579885,
+        "tbt_ms": 1073,
+        "cls": 0,
+        "transfer_bytes": 2156297
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 0,
+      "mode": "deferred",
+      "benchmarkIndex": 2994,
+      "metrics": {
+        "score": 61,
+        "fcp_ms": 3280.76583200158,
+        "lcp_ms": 3580.76583200158,
+        "tbt_ms": 1048.7792213343864,
+        "cls": 0,
+        "transfer_bytes": 2166108
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "measurements": [
+    {
+      "round": 1,
+      "mode": "baseline",
+      "benchmarkIndex": 2884.5,
+      "metrics": {
+        "score": 54,
+        "fcp_ms": 3277.4867145618728,
+        "lcp_ms": 4425.003429768116,
+        "tbt_ms": 1190.5,
+        "cls": 0,
+        "transfer_bytes": 2156281
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 1,
+      "mode": "deferred",
+      "benchmarkIndex": 2988.5,
+      "metrics": {
+        "score": 59,
+        "fcp_ms": 3281.188442668771,
+        "lcp_ms": 3731.188442668771,
+        "tbt_ms": 1105.5,
+        "cls": 0,
+        "transfer_bytes": 2166189
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 2,
+      "mode": "deferred",
+      "benchmarkIndex": 2962,
+      "metrics": {
+        "score": 63,
+        "fcp_ms": 3277.696832001585,
+        "lcp_ms": 3577.696832001585,
+        "tbt_ms": 916,
+        "cls": 0,
+        "transfer_bytes": 2166414
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 2,
+      "mode": "baseline",
+      "benchmarkIndex": 3122,
+      "metrics": {
+        "score": 51,
+        "fcp_ms": 3288.556714561864,
+        "lcp_ms": 4788.556714561864,
+        "tbt_ms": 1295,
+        "cls": 0,
+        "transfer_bytes": 2156283
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 3,
+      "mode": "baseline",
+      "benchmarkIndex": 2991,
+      "metrics": {
+        "score": 52,
+        "fcp_ms": 3282.457714561872,
+        "lcp_ms": 4782.457714561871,
+        "tbt_ms": 1243.5,
+        "cls": 0,
+        "transfer_bytes": 2156288
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 3,
+      "mode": "deferred",
+      "benchmarkIndex": 3049,
+      "metrics": {
+        "score": 62,
+        "fcp_ms": 3278.251832001586,
+        "lcp_ms": 3578.251832001586,
+        "tbt_ms": 949,
+        "cls": 0,
+        "transfer_bytes": 2166412
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 4,
+      "mode": "deferred",
+      "benchmarkIndex": 2942.5,
+      "metrics": {
+        "score": 61,
+        "fcp_ms": 3285.4150533359816,
+        "lcp_ms": 3585.4150533359816,
+        "tbt_ms": 1034.3147022239873,
+        "cls": 0,
+        "transfer_bytes": 2165940
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 4,
+      "mode": "baseline",
+      "benchmarkIndex": 3046,
+      "metrics": {
+        "score": 52,
+        "fcp_ms": 3281.329714561885,
+        "lcp_ms": 4499.179429768167,
+        "tbt_ms": 1387.5,
+        "cls": 0,
+        "transfer_bytes": 2160480
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 5,
+      "mode": "baseline",
+      "benchmarkIndex": 2920.5,
+      "metrics": {
+        "score": 49,
+        "fcp_ms": 3286.5647145618705,
+        "lcp_ms": 5586.073787693404,
+        "tbt_ms": 1173,
+        "cls": 0,
+        "transfer_bytes": 2160076
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "round": 5,
+      "mode": "deferred",
+      "benchmarkIndex": 2816.5,
+      "metrics": {
+        "score": 61,
+        "fcp_ms": 3280.40205333598,
+        "lcp_ms": 3580.40205333598,
+        "tbt_ms": 1020,
+        "cls": 0,
+        "transfer_bytes": 2166425
+      },
+      "vendors": {
+        "gtm": 1,
+        "meta": 1,
+        "clarity": 1
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "executionDiagnostics": {
+      "benchmarkMin": 2816.5,
+      "benchmarkMax": 3122,
+      "benchmarkMedian": 2988.5,
+      "warmupCount": 2,
+      "note": "No outlier filtering or score normalization; document timing after interception is diagnostic, not authoritative origin TTFB"
+    },
+    "status": "MEASURED_BROWSER_OVERRIDE_NOT_DEPLOYMENT_ACCEPTANCE",
+    "summaries": {
+      "baseline": {
+        "score": {
+          "median": 52,
+          "min": 49,
+          "max": 54
+        },
+        "fcp_ms": {
+          "median": 3282.457714561872,
+          "min": 3277.4867145618728,
+          "max": 3288.556714561864
+        },
+        "lcp_ms": {
+          "median": 4782.457714561871,
+          "min": 4425.003429768116,
+          "max": 5586.073787693404
+        },
+        "tbt_ms": {
+          "median": 1243.5,
+          "min": 1173,
+          "max": 1387.5
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "transfer_bytes": {
+          "median": 2156288,
+          "min": 2156281,
+          "max": 2160480
+        }
+      },
+      "deferred": {
+        "score": {
+          "median": 61,
+          "min": 59,
+          "max": 63
+        },
+        "fcp_ms": {
+          "median": 3280.40205333598,
+          "min": 3277.696832001585,
+          "max": 3285.4150533359816
+        },
+        "lcp_ms": {
+          "median": 3580.40205333598,
+          "min": 3577.696832001585,
+          "max": 3731.188442668771
+        },
+        "tbt_ms": {
+          "median": 1020,
+          "min": 916,
+          "max": 1105.5
+        },
+        "cls": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "transfer_bytes": {
+          "median": 2166412,
+          "min": 2165940,
+          "max": 2166425
+        }
+      }
+    },
+    "paired_baseline_minus_deferred": {
+      "score": -10,
+      "fcp_ms": 4.205882560285772,
+      "lcp_ms": 1204.2058825602853,
+      "tbt_ms": 294.5,
+      "cls": 0,
+      "transfer_bytes": -9908
+    },
+    "limits": [
+      "Browser-only HTML/policy override, not deployed Odoo candidate",
+      "Consent granted and review flag are experimental fixtures, not consent integration acceptance",
+      "Live vendor scripts retained; no Clarity exclusion change",
+      "Synthetic page visits may reach analytics; no form submission or conversion action",
+      "Shared first-party assets and visible page structure checked; full journeys not tested",
+      "Lab mobile simulation, not physical devices or field CWV"
+    ]
+  },
+  "acceptance": "Browser override only, not Odoo deployment, consent, conversion or physical-device acceptance"
+}

@@ -54,6 +54,18 @@ try{
  await run('late_policy_after_withdrawal',async t=>{await t.attach();await t.page.click('#search');await t.page.evaluate(c=>{window.fetch=()=>new Promise(resolve=>window.resolvePolicy=()=>resolve({ok:true,json:async()=>c}));window.receiving=LFThemeClickRelayV1.receive(c);},config);await t.page.evaluate(()=>{document.dispatchEvent(new Event('optionalCookiesDenied'));window.resolvePolicy();});await t.page.evaluate(()=>window.receiving);assert.equal((await t.events()).length,0);});
  await run('denial_before_start_then_accept',async t=>{await t.attach();await t.page.click('#search');await t.page.evaluate(()=>{document.dispatchEvent(new Event('optionalCookiesDenied'));});await t.attach();await t.page.click('#view');await t.receive();assert.deepEqual((await t.events()).map(e=>e.lf_event_name),['view_route']);});
  await run('bridge_contract_admission',async t=>{await t.page.evaluate(({config,candidate,bridge})=>{const node=document.createElement('script');node.type='application/json';node.id='lf-theme-tracking-policy';node.textContent=JSON.stringify(config);document.head.appendChild(node);(0,eval)(candidate);(0,eval)(bridge);},{config,candidate,bridge});await t.page.waitForFunction(()=>window.lfThemeClickOwner==='lf-click-v1');await t.page.click('#view');await t.receive();assert.equal((await t.events()).length,1);});
+ await run('locks_unavailable_no_ownership',async t=>{await t.page.evaluate(()=>Object.defineProperty(navigator,'locks',{value:undefined}));assert.equal(await t.attach(),false);assert.equal(await t.page.evaluate(()=>window.lfThemeClickOwner),undefined);});
+ await run('shared_storage_unavailable_no_ownership',async t=>{await t.page.evaluate(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('disabled');}}));assert.equal(await t.attach(),false);assert.equal(await t.page.evaluate(()=>window.lfThemeClickOwner),undefined);});
+ await run('claim_write_failure_no_dispatch',async t=>{await t.attach();await t.page.click('#search');await t.page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k.endsWith('.claims'))throw new Error('quota');return original.call(this,k,v);};});assert.equal(await t.receive(),false);assert.equal((await t.events()).length,0);assert.equal((await t.status()).pending,1);});
+ await run('withdraw_while_waiting_for_shared_lock',async t=>{
+  await t.attach();await t.page.click('#search');
+  await t.page.evaluate(()=>{window.holding=navigator.locks.request('lf.theme.click.v1.1.GTM-KR27QMCH.claims',()=>new Promise(resolve=>{window.releaseClaimLock=resolve;}));});
+  await t.page.waitForFunction(()=>typeof window.releaseClaimLock==='function');
+  await t.page.evaluate(c=>{window.receiving=LFThemeClickRelayV1.receive(c);},config);
+  await t.page.waitForFunction(()=>LFThemeClickRelayV1.status().receiverReady);
+  await t.page.evaluate(()=>{document.dispatchEvent(new Event('optionalCookiesDenied'));window.releaseClaimLock();});
+  await t.page.evaluate(()=>window.receiving);assert.equal((await t.events()).length,0);assert.equal((await t.status()).pending,0);
+ });
  await run('new_window_cloned_queue_no_duplicate',async t=>{
   await t.attach();await t.page.click('#search');
   const before=await t.page.evaluate(()=>sessionStorage.getItem(sessionStorage.key(0)));

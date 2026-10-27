@@ -17,11 +17,12 @@ async function snapshot(page,cdp,row,label){
  for(const nodeId of nodeIds){try{const r=await cdp.send('CSS.getPlatformFontsForNode',{nodeId});for(const f of r.fonts){if(f.glyphCount){const k=f.familyName+'|'+f.isCustomFont;fonts[k]=(fonts[k]||0)+f.glyphCount;}}}catch{}}
  const image=await page.screenshot({path:new URL(`${row.width}-${row.mode}-${label}.png`,out).pathname,fullPage:false});
  row.states.push({label,layout,fonts,screenshot_sha:sha(image)});
+ if(row.mode==='critical_then_full'&&label!=='enquiry_full'){assert.equal(await page.evaluate(()=>!!document.getElementById('r067-critical')&&!window.__r067FullReady),true,'Full CSS must remain held during critical-only snapshots');}
  if(row.mode==='baseline'){
   const tree=await page.evaluate(url=>{
    const sheet=[...document.styleSheets].find(s=>s.href===url);if(!sheet)throw Error('Service stylesheet missing');
    function walk(r,key){
-    if(r.type===CSSRule.STYLE_RULE){let matched=false;try{matched=!!document.querySelector(r.selectorText.replace(/::?(before|after|hover|active|focus-visible|focus-within|focus|visited|link|placeholder)\b/g,''));}catch{matched=true;}return {key,text:r.cssText,matched};}
+    if(r.type===CSSRule.STYLE_RULE){let matched=r.selectorText.includes('::');try{matched=matched||!!document.querySelector(r.selectorText.replace(/::?(before|after|hover|active|focus-visible|focus-within|focus|visited|link|placeholder)\b/g,''));}catch{matched=true;}return {key,text:r.cssText,matched};}
     if(r.cssRules&&r.type!==CSSRule.KEYFRAMES_RULE)return {key,header:r.cssText.slice(0,r.cssText.indexOf('{')),children:[...r.cssRules].map((x,i)=>walk(x,key+'.'+i))};
     return {key,text:r.cssText,keep:true};
    }return [...sheet.cssRules].map((r,i)=>walk(r,String(i)));
@@ -39,7 +40,7 @@ try{
  const originalLink=[...html.matchAll(/<link\b[^>]*>/g)].map(x=>x[0]).find(x=>x.includes(paths[0]));assert.ok(originalLink);
  const makeHTML=()=>{
   assert.ok(!critical.includes('</style'));
-  const markup='<style id="r067-critical">'+critical+'</style><link id="r067-full" rel="stylesheet" media="print"><script>requestAnimationFrame(()=>requestAnimationFrame(()=>{const l=document.getElementById("r067-full");l.onload=()=>{l.media="all";document.getElementById("r067-critical").remove();window.__r067FullReady=true};l.href='+JSON.stringify(cssURL.href)+'}));</script>';
+  const markup='<style id="r067-critical">'+critical+'</style><link id="r067-full" rel="stylesheet" media="print"><script>requestAnimationFrame(()=>requestAnimationFrame(()=>{const l=document.getElementById("r067-full");l.onload=()=>{l.onload=null;l.media="all";document.getElementById("r067-critical")?.remove();window.__r067FullReady=true};l.href='+JSON.stringify(cssURL.href)+'}));</script>';
   return html.replace(originalLink,markup);
  };
  chrome=await launch({chromePath:process.env.CHROME_PATH,ignoreDefaultFlags:true,chromeFlags:['--headless=new','--disable-dev-shm-usage','--enable-automation','--disable-background-networking','--disable-extensions','--disable-sync','--no-first-run','--no-default-browser-check']});browser=await puppeteer.connect({browserURL:`http://127.0.0.1:${chrome.port}`});
@@ -60,5 +61,5 @@ try{
  }
  report.comparisons=[];
  for(const width of [412,1440]){const a=report.cases.find(x=>x.width===width&&x.mode==='baseline'),b=report.cases.find(x=>x.width===width&&x.mode==='critical_then_full');for(const x of a.states){const y=b.states.find(z=>z.label===x.label);report.comparisons.push({width,state:x.label,layout_equal:JSON.stringify(x.layout)===JSON.stringify(y.layout),fonts_equal:JSON.stringify(x.fonts)===JSON.stringify(y.fonts),screenshot_equal:x.screenshot_sha===y.screenshot_sha,layout_diffs:x.layout.filter((v,i)=>JSON.stringify(v)!==JSON.stringify(y.layout[i])).slice(0,8),candidate_layout_diffs:y.layout.filter((v,i)=>JSON.stringify(v)!==JSON.stringify(x.layout[i])).slice(0,8)});}}
- report.status=report.comparisons.every(x=>x.layout_equal&&x.fonts_equal&&x.screenshot_equal)?'PASS_SAMPLED_CRITICAL_CSS_PARITY_NOT_DEPLOYMENT_APPROVAL':'CRITICAL_CSS_NOT_ACCEPTED';
+ report.status=report.cases.every(x=>x.errors.length===0)&&report.comparisons.every(x=>x.layout_equal&&x.fonts_equal&&x.screenshot_equal)?'PASS_SAMPLED_CRITICAL_CSS_PARITY_NOT_DEPLOYMENT_APPROVAL':'CRITICAL_CSS_NOT_ACCEPTED';if(report.status==='CRITICAL_CSS_NOT_ACCEPTED')process.exitCode=1;
 }catch(e){report.status='FAIL_OR_INCOMPLETE';report.error=String(e);process.exitCode=1;}finally{save();console.log('R067_SUMMARY',JSON.stringify({status:report.status,error:report.error,css:report.css,critical:report.critical,comparisons:report.comparisons}));await browser?.disconnect();await chrome?.kill();}

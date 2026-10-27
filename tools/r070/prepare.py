@@ -26,6 +26,10 @@ if scenario!='native-mixed':
         for i in range(count):
             card=html.fromstring(files[i%len(files)].read_text())
             card.set('data-route-id',str(1000+i))
+            for link in card.xpath('.//a[@class="fo-route-link"]'):
+                link.set('href','/freight/fixture-'+str(1000+i))
+            for link in card.xpath('.//a[@class="fo-update-link"]'):
+                link.set('href','/shipping-request?pricing_id='+str(1000+i))
             if scenario=='long-values-2':
                 for node in card.xpath('.//div[@class="fo-lane"]/div/strong'):
                     node.text='Very long reviewed route name ' * 7

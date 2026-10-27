@@ -1,0 +1,2074 @@
+[
+  {
+    "round": 1,
+    "mode": "critical_full",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1044,
+      "lcp": 1044,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1529,
+      "longTasks": [
+        {
+          "start": 796.3000000000175,
+          "duration": 204
+        },
+        {
+          "start": 2566.600000000006,
+          "duration": 111
+        },
+        {
+          "start": 5408.200000000012,
+          "duration": 243
+        },
+        {
+          "start": 5654.899999999994,
+          "duration": 53
+        },
+        {
+          "start": 5709,
+          "duration": 147
+        },
+        {
+          "start": 6334.399999999994,
+          "duration": 66
+        },
+        {
+          "start": 6659.200000000012,
+          "duration": 406
+        },
+        {
+          "start": 7113.899999999994,
+          "duration": 354
+        },
+        {
+          "start": 7473.3000000000175,
+          "duration": 460
+        },
+        {
+          "start": 8220.600000000006,
+          "duration": 139
+        }
+      ],
+      "fontsReady": 2020.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.293795,
+      "RecalcStyleDuration": 0.061237,
+      "ScriptDuration": 1.985099,
+      "TaskDuration": 3.221716
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_no_meta",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1056,
+      "lcp": 1056,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 630,
+      "longTasks": [
+        {
+          "start": 773.1000000000058,
+          "duration": 244
+        },
+        {
+          "start": 1062.6999999999825,
+          "duration": 75
+        },
+        {
+          "start": 2492.6999999999825,
+          "duration": 106
+        },
+        {
+          "start": 5512.1999999999825,
+          "duration": 96
+        },
+        {
+          "start": 6056,
+          "duration": 51
+        },
+        {
+          "start": 6652.799999999988,
+          "duration": 247
+        },
+        {
+          "start": 6908.299999999988,
+          "duration": 314
+        },
+        {
+          "start": 7432.6999999999825,
+          "duration": 91
+        }
+      ],
+      "fontsReady": 2028.3999999999942,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.37709,
+      "RecalcStyleDuration": 0.06091,
+      "ScriptDuration": 0.924143,
+      "TaskDuration": 2.153782
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_no_clarity",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1028,
+      "lcp": 1028,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 961,
+      "longTasks": [
+        {
+          "start": 767.7999999999884,
+          "duration": 223
+        },
+        {
+          "start": 1039.5,
+          "duration": 66
+        },
+        {
+          "start": 2507,
+          "duration": 109
+        },
+        {
+          "start": 5351.299999999988,
+          "duration": 178
+        },
+        {
+          "start": 5586.099999999977,
+          "duration": 96
+        },
+        {
+          "start": 6520.399999999965,
+          "duration": 251
+        },
+        {
+          "start": 6845.099999999977,
+          "duration": 248
+        },
+        {
+          "start": 7103.899999999965,
+          "duration": 312
+        },
+        {
+          "start": 7635.599999999977,
+          "duration": 101
+        }
+      ],
+      "fontsReady": 1996.5999999999767,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.346622,
+      "RecalcStyleDuration": 0.0634,
+      "ScriptDuration": 1.285027,
+      "TaskDuration": 2.301395
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_no_google",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1012,
+      "lcp": 1012,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 638,
+      "longTasks": [
+        {
+          "start": 794.6999999999534,
+          "duration": 185
+        },
+        {
+          "start": 2592.5,
+          "duration": 103
+        },
+        {
+          "start": 5379.199999999953,
+          "duration": 162
+        },
+        {
+          "start": 6519.099999999977,
+          "duration": 247
+        },
+        {
+          "start": 6800.799999999988,
+          "duration": 260
+        },
+        {
+          "start": 7433.599999999977,
+          "duration": 116
+        }
+      ],
+      "fontsReady": 1976.399999999965,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.268781,
+      "RecalcStyleDuration": 0.051002,
+      "ScriptDuration": 0.80651,
+      "TaskDuration": 1.680286
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_fonts_inline",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1124,
+      "lcp": 1124,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 901,
+      "longTasks": [
+        {
+          "start": 340.79999999998836,
+          "duration": 57
+        },
+        {
+          "start": 908.7000000000116,
+          "duration": 181
+        },
+        {
+          "start": 2876.399999999965,
+          "duration": 114
+        },
+        {
+          "start": 5514.399999999965,
+          "duration": 169
+        },
+        {
+          "start": 5736.200000000012,
+          "duration": 90
+        },
+        {
+          "start": 6269.399999999965,
+          "duration": 53
+        },
+        {
+          "start": 6658.899999999965,
+          "duration": 254
+        },
+        {
+          "start": 6982.799999999988,
+          "duration": 235
+        },
+        {
+          "start": 7225.5,
+          "duration": 297
+        },
+        {
+          "start": 7738.599999999977,
+          "duration": 89
+        }
+      ],
+      "fontsReady": 2094.2999999999884,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.273052,
+      "RecalcStyleDuration": 0.051339,
+      "ScriptDuration": 1.330079,
+      "TaskDuration": 2.385966
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_fonts_preload",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1112,
+      "lcp": 1168,
+      "cls": 0,
+      "longTaskBlockingAfterFCP": 928,
+      "longTasks": [
+        {
+          "start": 865.7000000000116,
+          "duration": 221
+        },
+        {
+          "start": 1171.0999999999767,
+          "duration": 57
+        },
+        {
+          "start": 3002.4000000000233,
+          "duration": 110
+        },
+        {
+          "start": 5393.599999999977,
+          "duration": 178
+        },
+        {
+          "start": 5619.299999999988,
+          "duration": 100
+        },
+        {
+          "start": 6226.799999999988,
+          "duration": 50
+        },
+        {
+          "start": 6282.299999999988,
+          "duration": 50
+        },
+        {
+          "start": 6549.900000000023,
+          "duration": 270
+        },
+        {
+          "start": 6867.900000000023,
+          "duration": 230
+        },
+        {
+          "start": 7105.799999999988,
+          "duration": 290
+        },
+        {
+          "start": 7611.599999999977,
+          "duration": 93
+        }
+      ],
+      "fontsReady": 1340.9000000000233,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.362062,
+      "RecalcStyleDuration": 0.053278,
+      "ScriptDuration": 1.333467,
+      "TaskDuration": 2.500067
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_fonts_preload",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1152,
+      "lcp": 1240,
+      "cls": 0,
+      "longTaskBlockingAfterFCP": 929,
+      "longTasks": [
+        {
+          "start": 336,
+          "duration": 52
+        },
+        {
+          "start": 866.7000000000116,
+          "duration": 236
+        },
+        {
+          "start": 1157.7000000000116,
+          "duration": 65
+        },
+        {
+          "start": 2889.4000000000233,
+          "duration": 108
+        },
+        {
+          "start": 5369.200000000012,
+          "duration": 173
+        },
+        {
+          "start": 5583.5,
+          "duration": 106
+        },
+        {
+          "start": 6136.600000000035,
+          "duration": 52
+        },
+        {
+          "start": 6520.5,
+          "duration": 256
+        },
+        {
+          "start": 6829.800000000047,
+          "duration": 231
+        },
+        {
+          "start": 7066.600000000035,
+          "duration": 291
+        },
+        {
+          "start": 7598.100000000035,
+          "duration": 97
+        }
+      ],
+      "fontsReady": 1358.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.369042,
+      "RecalcStyleDuration": 0.053845,
+      "ScriptDuration": 1.336219,
+      "TaskDuration": 2.501807
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_fonts_inline",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1132,
+      "lcp": 1132,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 954,
+      "longTasks": [
+        {
+          "start": 871.5,
+          "duration": 221
+        },
+        {
+          "start": 1114.9000000000233,
+          "duration": 72
+        },
+        {
+          "start": 2690.2999999999884,
+          "duration": 106
+        },
+        {
+          "start": 5416,
+          "duration": 172
+        },
+        {
+          "start": 5635.299999999988,
+          "duration": 94
+        },
+        {
+          "start": 6174.900000000023,
+          "duration": 50
+        },
+        {
+          "start": 6582.900000000023,
+          "duration": 305
+        },
+        {
+          "start": 6920.099999999977,
+          "duration": 235
+        },
+        {
+          "start": 7157.200000000012,
+          "duration": 299
+        },
+        {
+          "start": 7688.099999999977,
+          "duration": 93
+        }
+      ],
+      "fontsReady": 2096.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.352568,
+      "RecalcStyleDuration": 0.055406,
+      "ScriptDuration": 1.365883,
+      "TaskDuration": 2.453386
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_no_google",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1024,
+      "lcp": 1024,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 616,
+      "longTasks": [
+        {
+          "start": 799.7000000000116,
+          "duration": 192
+        },
+        {
+          "start": 2567.7999999999884,
+          "duration": 109
+        },
+        {
+          "start": 5372.700000000012,
+          "duration": 164
+        },
+        {
+          "start": 6512.200000000012,
+          "duration": 251
+        },
+        {
+          "start": 6794.299999999988,
+          "duration": 252
+        },
+        {
+          "start": 7414.099999999977,
+          "duration": 90
+        }
+      ],
+      "fontsReady": 1984.7000000000116,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.280032,
+      "RecalcStyleDuration": 0.058368,
+      "ScriptDuration": 0.807895,
+      "TaskDuration": 1.68566
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_no_clarity",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1020,
+      "lcp": 1020,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 945,
+      "longTasks": [
+        {
+          "start": 795.5999999999767,
+          "duration": 191
+        },
+        {
+          "start": 2533.4000000000233,
+          "duration": 103
+        },
+        {
+          "start": 5363.400000000023,
+          "duration": 168
+        },
+        {
+          "start": 5578.299999999988,
+          "duration": 94
+        },
+        {
+          "start": 6508.599999999977,
+          "duration": 298
+        },
+        {
+          "start": 6826.700000000012,
+          "duration": 237
+        },
+        {
+          "start": 7074.700000000012,
+          "duration": 303
+        },
+        {
+          "start": 7592.099999999977,
+          "duration": 92
+        }
+      ],
+      "fontsReady": 1995.2000000000116,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.270775,
+      "RecalcStyleDuration": 0.055191,
+      "ScriptDuration": 1.286714,
+      "TaskDuration": 2.19485
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_no_meta",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1000,
+      "lcp": 1000,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 622,
+      "longTasks": [
+        {
+          "start": 791,
+          "duration": 188
+        },
+        {
+          "start": 2559.1999999999534,
+          "duration": 108
+        },
+        {
+          "start": 5526.699999999953,
+          "duration": 96
+        },
+        {
+          "start": 6071.299999999988,
+          "duration": 50
+        },
+        {
+          "start": 6664.699999999953,
+          "duration": 278
+        },
+        {
+          "start": 6954.699999999953,
+          "duration": 297
+        },
+        {
+          "start": 7468.599999999977,
+          "duration": 93
+        }
+      ],
+      "fontsReady": 1980.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.270928,
+      "RecalcStyleDuration": 0.05584,
+      "ScriptDuration": 0.919259,
+      "TaskDuration": 1.905396
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_full",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1020,
+      "lcp": 1020,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 910,
+      "longTasks": [
+        {
+          "start": 767.5,
+          "duration": 221
+        },
+        {
+          "start": 1026.100000000035,
+          "duration": 66
+        },
+        {
+          "start": 2513.600000000035,
+          "duration": 104
+        },
+        {
+          "start": 5350.600000000035,
+          "duration": 168
+        },
+        {
+          "start": 5567.799999999988,
+          "duration": 90
+        },
+        {
+          "start": 6107.799999999988,
+          "duration": 50
+        },
+        {
+          "start": 6516.600000000035,
+          "duration": 265
+        },
+        {
+          "start": 6820,
+          "duration": 229
+        },
+        {
+          "start": 7055.400000000023,
+          "duration": 299
+        },
+        {
+          "start": 7576.600000000035,
+          "duration": 89
+        }
+      ],
+      "fontsReady": 2002.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.352883,
+      "RecalcStyleDuration": 0.055964,
+      "ScriptDuration": 1.311113,
+      "TaskDuration": 2.389131
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_full",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1028,
+      "lcp": 1028,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 991,
+      "longTasks": [
+        {
+          "start": 774.1999999999534,
+          "duration": 227
+        },
+        {
+          "start": 1054.5,
+          "duration": 70
+        },
+        {
+          "start": 2514.2999999999884,
+          "duration": 110
+        },
+        {
+          "start": 5360.099999999977,
+          "duration": 175
+        },
+        {
+          "start": 5584.599999999977,
+          "duration": 102
+        },
+        {
+          "start": 6133.899999999965,
+          "duration": 51
+        },
+        {
+          "start": 6511.199999999953,
+          "duration": 253
+        },
+        {
+          "start": 6812.299999999988,
+          "duration": 276
+        },
+        {
+          "start": 7096.099999999977,
+          "duration": 311
+        },
+        {
+          "start": 7619.5,
+          "duration": 93
+        }
+      ],
+      "fontsReady": 2004.5999999999767,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.366327,
+      "RecalcStyleDuration": 0.058295,
+      "ScriptDuration": 1.386249,
+      "TaskDuration": 2.560955
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_no_meta",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1036,
+      "lcp": 1036,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 638,
+      "longTasks": [
+        {
+          "start": 803.5,
+          "duration": 195
+        },
+        {
+          "start": 2565.2999999999884,
+          "duration": 120
+        },
+        {
+          "start": 5540.299999999988,
+          "duration": 94
+        },
+        {
+          "start": 6683,
+          "duration": 260
+        },
+        {
+          "start": 6953.200000000012,
+          "duration": 322
+        },
+        {
+          "start": 7494.200000000012,
+          "duration": 92
+        }
+      ],
+      "fontsReady": 2011.7999999999884,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.291643,
+      "RecalcStyleDuration": 0.058345,
+      "ScriptDuration": 0.947628,
+      "TaskDuration": 1.992704
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_no_clarity",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1024,
+      "lcp": 1024,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 967,
+      "longTasks": [
+        {
+          "start": 806.9000000000233,
+          "duration": 188
+        },
+        {
+          "start": 2583.4000000000233,
+          "duration": 107
+        },
+        {
+          "start": 5387.5,
+          "duration": 160
+        },
+        {
+          "start": 5599.599999999977,
+          "duration": 124
+        },
+        {
+          "start": 6522.5,
+          "duration": 268
+        },
+        {
+          "start": 6827.900000000023,
+          "duration": 253
+        },
+        {
+          "start": 7093.599999999977,
+          "duration": 313
+        },
+        {
+          "start": 7627.099999999977,
+          "duration": 92
+        }
+      ],
+      "fontsReady": 1996.5,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.27592,
+      "RecalcStyleDuration": 0.054546,
+      "ScriptDuration": 1.318075,
+      "TaskDuration": 2.197165
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_no_google",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1052,
+      "lcp": 1052,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 653,
+      "longTasks": [
+        {
+          "start": 780.3999999999651,
+          "duration": 234
+        },
+        {
+          "start": 1052.399999999965,
+          "duration": 74
+        },
+        {
+          "start": 2511.5,
+          "duration": 107
+        },
+        {
+          "start": 5360.899999999965,
+          "duration": 158
+        },
+        {
+          "start": 6496.799999999988,
+          "duration": 246
+        },
+        {
+          "start": 6781.199999999953,
+          "duration": 278
+        },
+        {
+          "start": 7423,
+          "duration": 90
+        }
+      ],
+      "fontsReady": 2023,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.368838,
+      "RecalcStyleDuration": 0.056985,
+      "ScriptDuration": 0.819448,
+      "TaskDuration": 1.804955
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_fonts_inline",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1116,
+      "lcp": 1116,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 905,
+      "longTasks": [
+        {
+          "start": 897.7999999999884,
+          "duration": 182
+        },
+        {
+          "start": 2895.7999999999884,
+          "duration": 105
+        },
+        {
+          "start": 5508.899999999965,
+          "duration": 176
+        },
+        {
+          "start": 5731.399999999965,
+          "duration": 102
+        },
+        {
+          "start": 6279.799999999988,
+          "duration": 51
+        },
+        {
+          "start": 6660,
+          "duration": 247
+        },
+        {
+          "start": 6948.5,
+          "duration": 245
+        },
+        {
+          "start": 7202.799999999988,
+          "duration": 289
+        },
+        {
+          "start": 7729.299999999988,
+          "duration": 90
+        }
+      ],
+      "fontsReady": 2091.2999999999884,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.266897,
+      "RecalcStyleDuration": 0.05392,
+      "ScriptDuration": 1.342158,
+      "TaskDuration": 2.430191
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_fonts_preload",
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1184,
+      "lcp": 1272,
+      "cls": 0,
+      "longTaskBlockingAfterFCP": 1073,
+      "longTasks": [
+        {
+          "start": 338.29999999998836,
+          "duration": 58
+        },
+        {
+          "start": 924.9000000000233,
+          "duration": 227
+        },
+        {
+          "start": 1192.100000000035,
+          "duration": 60
+        },
+        {
+          "start": 2878.600000000035,
+          "duration": 102
+        },
+        {
+          "start": 5379.600000000035,
+          "duration": 180
+        },
+        {
+          "start": 5563.299999999988,
+          "duration": 57
+        },
+        {
+          "start": 5624.700000000012,
+          "duration": 99
+        },
+        {
+          "start": 6171,
+          "duration": 51
+        },
+        {
+          "start": 6553.799999999988,
+          "duration": 280
+        },
+        {
+          "start": 6891,
+          "duration": 290
+        },
+        {
+          "start": 7189.799999999988,
+          "duration": 352
+        },
+        {
+          "start": 7762.100000000035,
+          "duration": 102
+        }
+      ],
+      "fontsReady": 1356.7000000000116,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "computedFonts": [
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        },
+        {
+          "tag": "H1",
+          "font": "\"LF Cargo Manrope\", Inter, system-ui, sans-serif",
+          "size": "32px"
+        },
+        {
+          "tag": "A",
+          "font": "Inter, system-ui, sans-serif",
+          "size": "24px"
+        }
+      ],
+      "fullReady": true
+    },
+    "cpu": {
+      "LayoutDuration": 0.352737,
+      "RecalcStyleDuration": 0.052081,
+      "ScriptDuration": 1.48147,
+      "TaskDuration": 2.612231
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "a480bcb874567c2a7b3886ce70b9ea869eed75f3f8b72f07c95e27ffef00888b",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "4bef49c143b614ad1f6cbe15e6fc3737ddc6076f8306601d7e6463090d55c244",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "6b8604c85f6cb487371615468ac280eccc3ff39871affbbe4a6b6a03dfe06fcf",
+        "bytes": 726
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.72/clarity.js",
+        "sha256": "981a3eecbb175c0b72d65f75035c98ceb8f2a1a324532c7184c0890dd37a92e6",
+        "bytes": 73523
+      }
+    ]
+  }
+]

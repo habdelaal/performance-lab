@@ -1,0 +1,133 @@
+{
+  "container_version": "19",
+  "public_response_sha256": "34f4640fb1b27384922bd6542d3d4b13fc21a756b31b7a38e9fac14afee66bfc",
+  "tags": [
+    {
+      "id": 3,
+      "type": "__googtag",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 5,
+      "type": "__gaawe",
+      "event": "quote_request",
+      "html_bytes": 0
+    },
+    {
+      "id": 8,
+      "type": "__gaawe",
+      "event": "generate_lead",
+      "html_bytes": 0
+    },
+    {
+      "id": 10,
+      "type": "__gaawe",
+      "event": "schedule_consultation",
+      "html_bytes": 0
+    },
+    {
+      "id": 12,
+      "type": "__gaawe",
+      "event": "freight_search",
+      "html_bytes": 0
+    },
+    {
+      "id": 14,
+      "type": "__gaawe",
+      "event": "view_route",
+      "html_bytes": 0
+    },
+    {
+      "id": 16,
+      "type": "__gaawe",
+      "event": "route_view",
+      "html_bytes": 0
+    },
+    {
+      "id": 18,
+      "type": "__gaawe",
+      "event": "request_booking",
+      "html_bytes": 0
+    },
+    {
+      "id": 20,
+      "type": "__gaawe",
+      "event": "contact_us",
+      "html_bytes": 0
+    },
+    {
+      "id": 22,
+      "type": "__gaawe",
+      "event": "booking_confirmed",
+      "html_bytes": 0
+    },
+    {
+      "id": 26,
+      "type": "__gaawe",
+      "event": "sign_up",
+      "html_bytes": 0
+    },
+    {
+      "id": 28,
+      "type": "__cvt_MQDKZ",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 37,
+      "type": "__gaawe",
+      "event": [
+        "macro",
+        11
+      ],
+      "html_bytes": 0
+    },
+    {
+      "id": 45,
+      "type": "__cvt_252002506_44",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 46,
+      "type": "__cvt_252002506_44",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 47,
+      "type": "__lcl",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 48,
+      "type": "__cl",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 49,
+      "type": "__cl",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 50,
+      "type": "__cl",
+      "event": null,
+      "html_bytes": 0
+    },
+    {
+      "id": 39,
+      "type": "__html",
+      "event": null,
+      "html_bytes": 10437
+    }
+  ],
+  "limits": [
+    "Public deployed-container source inventory, not GTM workspace or event firing acceptance",
+    "Distinct event definitions do not prove duplicate firing"
+  ]
+}

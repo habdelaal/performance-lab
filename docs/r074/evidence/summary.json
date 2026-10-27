@@ -1,0 +1,134 @@
+{
+  "critical_full": {
+    "fcp": {
+      "median": 1028,
+      "min": 1020,
+      "max": 1044
+    },
+    "lcp": {
+      "median": 1028,
+      "min": 1020,
+      "max": 1044
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 991,
+      "min": 910,
+      "max": 1529
+    }
+  },
+  "critical_no_meta": {
+    "fcp": {
+      "median": 1036,
+      "min": 1000,
+      "max": 1056
+    },
+    "lcp": {
+      "median": 1036,
+      "min": 1000,
+      "max": 1056
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 630,
+      "min": 622,
+      "max": 638
+    }
+  },
+  "critical_no_clarity": {
+    "fcp": {
+      "median": 1024,
+      "min": 1020,
+      "max": 1028
+    },
+    "lcp": {
+      "median": 1024,
+      "min": 1020,
+      "max": 1028
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 961,
+      "min": 945,
+      "max": 967
+    }
+  },
+  "critical_no_google": {
+    "fcp": {
+      "median": 1024,
+      "min": 1012,
+      "max": 1052
+    },
+    "lcp": {
+      "median": 1024,
+      "min": 1012,
+      "max": 1052
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 638,
+      "min": 616,
+      "max": 653
+    }
+  },
+  "critical_fonts_inline": {
+    "fcp": {
+      "median": 1124,
+      "min": 1116,
+      "max": 1132
+    },
+    "lcp": {
+      "median": 1124,
+      "min": 1116,
+      "max": 1132
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 905,
+      "min": 901,
+      "max": 954
+    }
+  },
+  "critical_fonts_preload": {
+    "fcp": {
+      "median": 1152,
+      "min": 1112,
+      "max": 1184
+    },
+    "lcp": {
+      "median": 1240,
+      "min": 1168,
+      "max": 1272
+    },
+    "cls": {
+      "median": 0,
+      "min": 0,
+      "max": 0
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 929,
+      "min": 928,
+      "max": 1073
+    }
+  }
+}

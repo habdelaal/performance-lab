@@ -29,10 +29,10 @@ jobs:
       - name: Install existing locked browser dependencies
         working-directory: tools/r052
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Verify critical CSS before full stylesheet delivery
+      - name: Compare pinned CSS over real throttled HTTPS sockets
         env:
           CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
-        run: node tools/r068/transport.mjs
+        run: node tools/r068/browser.mjs
       - name: Preserve results including failures
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

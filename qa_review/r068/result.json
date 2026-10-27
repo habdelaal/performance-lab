@@ -1,0 +1,1103 @@
+{
+  "status": "PASS_SAMPLED_CRITICAL_CSS_PARITY_NOT_DEPLOYMENT_APPROVAL",
+  "css": {
+    "url": "https://livefreight-staging.odoo.com/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css",
+    "bytes": 1010385,
+    "sha256": "5ea9d036011ac8a4bf7839f9442803614bbd3be6e9ee21535b81d1a06efbd5c7"
+  },
+  "critical": {
+    "bytes": 160405,
+    "sha256": "6b3cea15044f8f1d68818cf2a9dfb27fc5f5e5e568da4a1f726fb95c8e6886f8",
+    "rules": 1228
+  },
+  "comparisons": [
+    {
+      "width": 412,
+      "state": "initial",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 412,
+      "state": "menu",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 412,
+      "state": "appearance",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 412,
+      "state": "enquiry",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 1440,
+      "state": "initial",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 1440,
+      "state": "appearance",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    },
+    {
+      "width": 1440,
+      "state": "enquiry",
+      "layout_equal": true,
+      "fonts_equal": true,
+      "screenshot_equal": true,
+      "layout_diffs": [],
+      "candidate_layout_diffs": []
+    }
+  ],
+  "performance": {
+    "rows": [
+      {
+        "round": 1,
+        "mode": "baseline",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 2100,
+          "lcp": 2100,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2833.600000000035,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": false,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1248.5999999999767
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      },
+      {
+        "round": 1,
+        "mode": "critical_then_full",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 1096,
+          "lcp": 1096,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2014.899999999965,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": true,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1767.2000000000116
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      },
+      {
+        "round": 2,
+        "mode": "critical_then_full",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 1096,
+          "lcp": 1276,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2028,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": true,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1759.6999999999534
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      },
+      {
+        "round": 2,
+        "mode": "baseline",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 2076,
+          "lcp": 2076,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2812.899999999965,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": false,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1241.399999999965
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      },
+      {
+        "round": 3,
+        "mode": "baseline",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 2096,
+          "lcp": 2096,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2835.5,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": false,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1254.7999999999884
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      },
+      {
+        "round": 3,
+        "mode": "critical_then_full",
+        "errors": [],
+        "gtm": 1,
+        "metrics": {
+          "fcp": 1096,
+          "lcp": 1096,
+          "cls": 0.1111972262019807,
+          "shiftSum": 0.1111972262019807,
+          "shifts": [
+            {
+              "time": 2022.2999999999884,
+              "value": 0.1111972262019807,
+              "sources": [
+                {
+                  "tag": "IMG",
+                  "id": "",
+                  "cls": "hero-art",
+                  "prev": {
+                    "x": 16,
+                    "y": 594.09375,
+                    "width": 380,
+                    "height": 144,
+                    "top": 594.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 538.09375,
+                    "width": 380,
+                    "height": 200,
+                    "top": 538.09375,
+                    "right": 396,
+                    "bottom": 738.09375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "wrap assurance",
+                  "prev": {
+                    "x": 16,
+                    "y": 794.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 794.09375,
+                    "right": 396,
+                    "bottom": 890.484375,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 738.09375,
+                    "width": 380,
+                    "height": 96.390625,
+                    "top": 738.09375,
+                    "right": 396,
+                    "bottom": 834.484375,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "SECTION",
+                  "id": "why-cargo-insurance",
+                  "cls": "section wrap intro intro-refined oe_structure o_colored_level",
+                  "prev": {
+                    "x": 16,
+                    "y": 890.484375,
+                    "width": 380,
+                    "height": 9.515625,
+                    "top": 890.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 834.484375,
+                    "width": 380,
+                    "height": 65.515625,
+                    "top": 834.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "hero-note",
+                  "prev": {
+                    "x": 40,
+                    "y": 554.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 554.09375,
+                    "right": 372,
+                    "bottom": 570.09375,
+                    "left": 40
+                  },
+                  "current": {
+                    "x": 40,
+                    "y": 498.09375,
+                    "width": 332,
+                    "height": 16,
+                    "top": 498.09375,
+                    "right": 372,
+                    "bottom": 514.09375,
+                    "left": 40
+                  }
+                },
+                {
+                  "tag": "DIV",
+                  "id": "",
+                  "cls": "",
+                  "prev": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0,
+                    "top": 0,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                  },
+                  "current": {
+                    "x": 16,
+                    "y": 872.484375,
+                    "width": 380,
+                    "height": 27.515625,
+                    "top": 872.484375,
+                    "right": 396,
+                    "bottom": 900,
+                    "left": 16
+                  }
+                }
+              ]
+            }
+          ],
+          "fullReady": true,
+          "tracking": {
+            "google": "script_loaded",
+            "meta": "script_loaded",
+            "started": true,
+            "stopped": false,
+            "reloadRequired": false,
+            "reason": "",
+            "queued": 0
+          },
+          "resources": [
+            {
+              "transfer": 143669,
+              "encoded": 143369,
+              "duration": 1759.5999999999767
+            }
+          ],
+          "ready": "complete"
+        },
+        "cssSocketRequests": 1,
+        "snapshotMisses": [],
+        "serverErrors": []
+      }
+    ],
+    "method": "Real loopback HTTPS socket, gzip text, CDP network throttle; public Staging snapshots, alternate port, no upstream writes",
+    "limits": [
+      "Fixture origin uses same hostname with a different port; not native Odoo deployment or PSI score",
+      "Public assets snapshotted and served locally; server response latency is not measured",
+      "Google runtime real; Meta/Clarity scripts stubbed equally; collection intercepted",
+      "Temporary certificate exception is restricted to this generated public key; Chrome sandbox remains enabled"
+    ],
+    "sandbox_disabled": false,
+    "calibration": {
+      "ms": 8944.800000000047,
+      "bytes": 200000
+    },
+    "medians": {
+      "baseline": {
+        "fcp": 2096,
+        "lcp": 2096,
+        "cls": 0.1111972262019807
+      },
+      "critical_then_full": {
+        "fcp": 1096,
+        "lcp": 1096,
+        "cls": 0.1111972262019807
+      }
+    },
+    "status": "PASS_CONTROLLED_SOCKET_COMPARISON_NOT_NATIVE_DEPLOYMENT"
+  }
+}

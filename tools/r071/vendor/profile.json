@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "document_sha256": "081111af3d8cac367111c32e277e8da095bd6f1e6e4c2a216ea4987a54c0639e",
+  "critical_sha256": "ff8a4aafaee12881e928ed9c9fa09219fd9aa2688e72740da6e1f5f9c03f32f3",
+  "loader_sha256": "763f0d4ecf326be3323edcbc28dd48b15922348340237b966d75b6ff571b3925",
+  "css_url": "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css",
+  "attachments": [
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "a94ac4eb430374c9f24532f647a52c2eb89609e6",
+      "url": "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css"
+    },
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/735901c/eit_live_freight_core_pages.cargo_assets.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "d3e4dac6a3ab6a9348d121d91567e59cc813260e",
+      "url": "/web/assets/1/735901c/eit_live_freight_core_pages.cargo_assets.min.css"
+    },
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/bdfe27b/eit_freight_search_theme.assets.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "73ae583b2d66d522f8629c4330ba9827056f90f9",
+      "url": "/web/assets/1/bdfe27b/eit_freight_search_theme.assets.min.css"
+    },
+    {
+      "domain": [
+        [
+          "id",
+          "=",
+          33593
+        ]
+      ],
+      "sha1": "1495474606fd2ccb01e8fb43058c3e745bd78bd3",
+      "url": "/web/content/33593/google-font-Inter"
+    },
+    {
+      "domain": [
+        [
+          "id",
+          "=",
+          33600
+        ]
+      ],
+      "sha1": "3b2eeab8e666f8eda9bf3a80c6488e2807f702d4",
+      "url": "/web/content/33600/google-font-Oxygen"
+    }
+  ],
+  "evidence": "https://github.com/Runzato/performance-lab/actions/runs/40449914650",
+  "activation": "Off by default. R070 native/browser integration and explicit merge acceptance required.",
+  "rates_contract_sha256": "f77f519d2ef9cc49f7ef13c7abd8ae6aea34e90bc28eeb4d9353e95e327a0d01",
+  "r070_component_evidence": "https://github.com/Runzato/performance-lab/actions/runs/40458692310"
+}

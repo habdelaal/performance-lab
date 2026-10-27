@@ -1,0 +1,47 @@
+name: R069 native diagnostics
+on:
+  push:
+    branches: [qa/r053-browser]
+    paths: ['tools/r069/**', '.github/workflows/r069-events.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: r069-events
+  cancel-in-progress: false
+jobs:
+  browser:
+    if: github.ref == 'refs/heads/qa/r053-browser'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.14.0'
+      - name: Install pinned Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4
+        with:
+          chrome-version: '145.0.7632.117'
+      - name: Install existing locked browser dependencies
+        working-directory: tools/r052
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Install isolated HTML parser
+        run: python3 -m pip install --target=/tmp/r069-python lxml==5.2.1
+      - name: Compare pinned CSS over real throttled HTTPS sockets
+        env:
+          PYTHONPATH: /tmp/r069-python
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: node tools/r069/browser.mjs
+      - name: Preserve results including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: r069-events-${{ github.run_id }}-${{ github.run_attempt }}
+          path: tools/r069/reports/
+          if-no-files-found: warn
+          retention-days: 14
+

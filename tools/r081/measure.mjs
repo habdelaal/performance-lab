@@ -23,10 +23,11 @@ try{
    chrome=await launch({chromePath:process.env.CHROME_PATH,chromeFlags:['--headless=new','--disable-dev-shm-usage','--no-first-run','--no-default-browser-check']});
    const run=await lighthouse(target,{port:chrome.port,logLevel:'error',output:'json'}, {extends:'lighthouse:default',settings:settings[device]});
    assert.ok(run);const {lhr,artifacts}=run;
+   writeFileSync(new URL(prefix+'.context.json',out),JSON.stringify({URL:artifacts.URL,GatherContext:artifacts.GatherContext,HostDPR:artifacts.HostDPR,SourceMaps:artifacts.SourceMaps}));
    writeFileSync(new URL(prefix+'.lhr.json',out),JSON.stringify(lhr));
-   writeFileSync(new URL(prefix+'.trace.json.gz',out),gzipSync(JSON.stringify(artifacts.traces.defaultPass)));
-   writeFileSync(new URL(prefix+'.devtoolslog.json.gz',out),gzipSync(JSON.stringify(artifacts.devtoolsLogs.defaultPass)));
-   const docs=artifacts.devtoolsLogs.defaultPass.filter(e=>e.method==='Network.responseReceived'&&e.params.type==='Document'&&e.params.response.url===target);
+   writeFileSync(new URL(prefix+'.trace.json.gz',out),gzipSync(JSON.stringify(artifacts.Trace)));
+   writeFileSync(new URL(prefix+'.devtoolslog.json.gz',out),gzipSync(JSON.stringify(artifacts.DevtoolsLog)));
+   const docs=artifacts.DevtoolsLog.filter(e=>e.method==='Network.responseReceived'&&e.params.type==='Document'&&e.params.response.url===target);
    assert.equal(docs.length,1);const h=Object.fromEntries(Object.entries(docs[0].params.response.headers).map(([k,v])=>[k.toLowerCase(),v]));
    assert.equal(h['x-lf-critical-css'],'r069','Critical CSS absent in measured request');assert.equal(lhr.lighthouseVersion,'13.5.0');assert.ok(!lhr.runtimeError,JSON.stringify(lhr.runtimeError));
    const metrics=lhr.audits.metrics.details.items[0];

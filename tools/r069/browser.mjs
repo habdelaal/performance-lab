@@ -41,6 +41,7 @@ try{
  report.css={url:cssURL.href,bytes:Buffer.byteLength(css),sha256:sha(css)};
  const originalLink=[...html.matchAll(/<link\b[^>]*>/g)].map(x=>x[0]).find(x=>x.includes(paths[0]));assert.ok(originalLink);
  const makeHTML=()=>execFileSync('python3',[new URL('render.py',import.meta.url).pathname],{input:html,maxBuffer:2000000}).toString();
+ makeHTML();
  chrome=await launch({chromePath:process.env.CHROME_PATH,ignoreDefaultFlags:true,chromeFlags:['--headless=new','--disable-dev-shm-usage','--enable-automation','--disable-background-networking','--disable-extensions','--disable-sync','--no-first-run','--no-default-browser-check']});browser=await puppeteer.connect({browserURL:`http://127.0.0.1:${chrome.port}`});
  const cmd=await(await browser.target().createCDPSession()).send('Browser.getBrowserCommandLine');assert.ok(!cmd.arguments.some(x=>/^--(?:no-sandbox|disable-setuid-sandbox|disable-namespace-sandbox)/.test(x)));report.sandbox_disabled=false;
  for(const mode of ['baseline','critical_then_full'])for(const width of [412,1440]){

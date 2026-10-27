@@ -53,7 +53,8 @@
     "screenEmulation": {
       "width": 1350,
       "height": 940,
-      "deviceScaleFactor": 1
+      "deviceScaleFactor": 1,
+      "mobile": false
     },
     "ignoreStatusCode": true,
     "maxWaitForFcp": 15000,

@@ -1,0 +1,146 @@
+{
+  "schema": 2,
+  "document_sha256": "5cc3bfe50e416b0ad63737a49b513f3790ee2a6a0638e33543d97562a5bd59e9",
+  "critical_sha256": "ff8a4aafaee12881e928ed9c9fa09219fd9aa2688e72740da6e1f5f9c03f32f3",
+  "loader_sha256": "763f0d4ecf326be3323edcbc28dd48b15922348340237b966d75b6ff571b3925",
+  "css_url": "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css",
+  "attachments": [
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "a94ac4eb430374c9f24532f647a52c2eb89609e6",
+      "url": "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css"
+    },
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/735901c/eit_live_freight_core_pages.cargo_assets.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "d3e4dac6a3ab6a9348d121d91567e59cc813260e",
+      "url": "/web/assets/1/735901c/eit_live_freight_core_pages.cargo_assets.min.css"
+    },
+    {
+      "domain": [
+        [
+          "url",
+          "=",
+          "/web/assets/1/bdfe27b/eit_freight_search_theme.assets.min.css"
+        ],
+        [
+          "public",
+          "=",
+          true
+        ]
+      ],
+      "sha1": "73ae583b2d66d522f8629c4330ba9827056f90f9",
+      "url": "/web/assets/1/bdfe27b/eit_freight_search_theme.assets.min.css"
+    },
+    {
+      "domain": [
+        [
+          "id",
+          "=",
+          33593
+        ]
+      ],
+      "sha1": "1495474606fd2ccb01e8fb43058c3e745bd78bd3",
+      "url": "/web/content/33593/google-font-Inter"
+    },
+    {
+      "domain": [
+        [
+          "id",
+          "=",
+          33600
+        ]
+      ],
+      "sha1": "3b2eeab8e666f8eda9bf3a80c6488e2807f702d4",
+      "url": "/web/content/33600/google-font-Oxygen"
+    }
+  ],
+  "evidence": "https://github.com/Runzato/performance-lab/actions/runs/40449914650",
+  "activation": "Off by default. R070 native/browser integration and explicit merge acceptance required.",
+  "rates_contract_sha256": "f77f519d2ef9cc49f7ef13c7abd8ae6aea34e90bc28eeb4d9353e95e327a0d01",
+  "r070_component_evidence": "https://github.com/Runzato/performance-lab/actions/runs/40458692310",
+  "resources": [
+    {
+      "url": "/web/assets/1/ea69da2/eit_live_freight_theme.assets_service_frontend.min.css",
+      "sha1": "a94ac4eb430374c9f24532f647a52c2eb89609e6",
+      "xpath": "//link[@rel=\"stylesheet\"]",
+      "attribute": "href"
+    },
+    {
+      "url": "/web/assets/1/735901c/eit_live_freight_core_pages.cargo_assets.min.css",
+      "sha1": "d3e4dac6a3ab6a9348d121d91567e59cc813260e",
+      "xpath": "//link[@rel=\"stylesheet\"]",
+      "attribute": "href"
+    },
+    {
+      "url": "/web/assets/1/bdfe27b/eit_freight_search_theme.assets.min.css",
+      "sha1": "73ae583b2d66d522f8629c4330ba9827056f90f9",
+      "xpath": "//link[@rel=\"stylesheet\"]",
+      "attribute": "href"
+    },
+    {
+      "url": "/web/assets/1/b2845eb/eit_live_freight_theme_livechat.assets_initial.min.js",
+      "sha1": "84154bd2282d5af9f31424802f252072a764db8a",
+      "xpath": "//script",
+      "attribute": "data-src"
+    },
+    {
+      "url": "/web/assets/1/3609956/eit_live_freight_core_pages.cargo_assets.min.js",
+      "sha1": "89a6a74ee07acd7a1f58c990e5d8bb0641dc2e7b",
+      "xpath": "//script",
+      "attribute": "src"
+    },
+    {
+      "url": "/web/assets/1/f621346/eit_live_freight_theme.tracking.min.js",
+      "sha1": "ae57491acf7bb060176c4201eb2deee2dd8ad23b",
+      "xpath": "//script",
+      "attribute": "src"
+    },
+    {
+      "url": "/web/assets/1/9d50295/eit_live_freight_theme.bootstrap.min.js",
+      "sha1": "7b598d66e9b6c42cee049cda85be97cfe61d61e8",
+      "xpath": "//script",
+      "attribute": "src"
+    },
+    {
+      "url": "/web/assets/1/ca9e8fa/eit_live_freight_theme.assets.min.js",
+      "sha1": "9016a925c2dc9e2e5edf11616cc8028a93f51de1",
+      "xpath": "//script",
+      "attribute": "src"
+    },
+    {
+      "url": "/web/assets/1/c944c69/eit_live_freight_insurance_crm.enquiry_assets.min.js",
+      "sha1": "372ccb56a7e9f0deeffe4235c563a866ee2e3ddd",
+      "xpath": "//script",
+      "attribute": "src"
+    },
+    {
+      "url": "/web/assets/1/2576663/eit_live_freight_insurance_crm.captcha_assets.min.js",
+      "sha1": "2cba9f88ffd03d859cf62059bbb17e40e6658453",
+      "xpath": "//script",
+      "attribute": "data-src"
+    }
+  ],
+  "deployment_metadata_version": 1
+}

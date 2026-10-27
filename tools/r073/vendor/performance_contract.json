@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "template_sha256": "5ab513c8e864c184ea9ffee9c22802bc930c713348aa778d66674ad35840b5aa",
+  "cards": {
+    "current:1:1": "fe9f9b47ada092147f1ce33066c96db2dcd39bc1cc0b18cc1ba8662611446cff",
+    "expired:1:1": "d905500c0659cf977d4664cc8279dbbdcb81c5ba5d31ec13dea23e323074d676",
+    "expired:0:1": "f1139523bf4fb27ce00535eea2f5c0f5860f862432b109e7a4b2768392c26a25",
+    "confirmation:1:1": "b017d35fb4a8e60592a74de9677d92eea23c93a79a9083ee2bb95de2c10bfc6e",
+    "confirmation:1:0": "287a5391bf855b19aac9cc67f45973b184e0fa284794462ee780f3078d61099a",
+    "confirmation:0:1": "b85e7eb33385d83669aa5d44fb7849df995a72d3427b5201589263f16cde0334",
+    "confirmation:0:0": "b6e42e93725e19285093980ca4c70a53a340ea71fdac01d12f3236fdf308ffd4"
+  },
+  "limits": "DOM admission evidence only; critical CSS/browser/page enrollment not accepted.",
+  "empty": "385d9cbe6e5d66d3c2f16dbc06931ef56f8b1b047979f95924624700616db421"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "mode": "desktop_default",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 1,
+    "mode": "mobile_default",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 2,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 3,
+    "mode": "desktop_gzip",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 4,
+    "mode": "desktop_default",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 5,
+    "mode": "mobile_default",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 6,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 7,
+    "mode": "desktop_gzip",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  }
+]

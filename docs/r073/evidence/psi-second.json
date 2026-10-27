@@ -1,0 +1,120 @@
+{
+  "time": "2026-10-27T10:02:53.562Z",
+  "performance": 0.41,
+  "metrics": {
+    "first-contentful-paint": 6615.562031245909,
+    "largest-contentful-paint": 11472.642965685665,
+    "total-blocking-time": 735.5,
+    "cumulative-layout-shift": 0
+  },
+  "render_blocking": {
+    "headings": [
+      {
+        "key": "url",
+        "label": "URL",
+        "valueType": "url"
+      },
+      {
+        "key": "totalBytes",
+        "label": "Transfer Size",
+        "valueType": "bytes"
+      },
+      {
+        "key": "wastedMs",
+        "label": "Duration",
+        "valueType": "timespanMs"
+      }
+    ],
+    "items": [
+      {
+        "totalBytes": 185816,
+        "url": "https://livefreight-staging.odoo.com/web/assets/1/bd5ca1f/eit_live_freight_theme.assets_service_frontend.min.css",
+        "wastedMs": 2701
+      },
+      {
+        "totalBytes": 998,
+        "url": "https://livefreight-staging.odoo.com/web/assets/1/22b1ef1/eit_freight_search_theme.assets.min.css",
+        "wastedMs": 451
+      },
+      {
+        "totalBytes": 896,
+        "url": "https://livefreight-staging.odoo.com/web/assets/1/79bbae6/eit_live_freight_theme.bootstrap.min.js",
+        "wastedMs": 451
+      },
+      {
+        "totalBytes": 17496,
+        "url": "https://livefreight-staging.odoo.com/web/assets/1/bee10bf/eit_live_freight_core_pages.cargo_assets.min.css",
+        "wastedMs": 751
+      },
+      {
+        "totalBytes": 1001,
+        "url": "https://livefreight-staging.odoo.com/web/content/33600/google-font-Oxygen",
+        "wastedMs": 151
+      },
+      {
+        "totalBytes": 1634,
+        "url": "https://livefreight-staging.odoo.com/web/content/33593/google-font-Inter",
+        "wastedMs": 151
+      }
+    ],
+    "type": "table"
+  },
+  "lcp_breakdown": {
+    "items": [
+      {
+        "headings": [
+          {
+            "key": "label",
+            "label": "Subpart",
+            "valueType": "text"
+          },
+          {
+            "key": "duration",
+            "label": "Duration",
+            "valueType": "ms"
+          }
+        ],
+        "items": [
+          {
+            "duration": 3.237,
+            "label": "Time to first byte",
+            "subpart": "timeToFirstByte"
+          },
+          {
+            "duration": 128.438,
+            "label": "Resource load delay",
+            "subpart": "resourceLoadDelay"
+          },
+          {
+            "duration": 37.01,
+            "label": "Resource load duration",
+            "subpart": "resourceLoadDuration"
+          },
+          {
+            "duration": 2117.124,
+            "label": "Element render delay",
+            "subpart": "elementRenderDelay"
+          }
+        ],
+        "type": "table"
+      },
+      {
+        "boundingRect": {
+          "bottom": 764,
+          "height": 200,
+          "left": 16,
+          "right": 396,
+          "top": 564,
+          "width": 380
+        },
+        "lhId": "page-0-IMG",
+        "nodeLabel": "Transparent glass shipping container beneath a protective dome, an illustration…",
+        "path": "1,HTML,1,BODY,0,DIV,1,MAIN,0,DIV,2,DIV,0,DIV,1,SECTION,0,IMG",
+        "selector": "div#lf-content > div.lf-core-page > section.hero > img.hero-art",
+        "snippet": "<img class=\"hero-art\" width=\"1942\" height=\"809\" src=\"https://livefreight-staging.odoo.com/eit_live_freight_core_pages/static/sr…\" alt=\"Transparent glass shipping container beneath a protective dome, an illustr…\" fetchpriority=\"high\" decoding=\"async\" loading=\"eager\" srcset=\"/eit_live_freight_core_pages/static/src/img/cargo-glass-768-v1.webp 768w, …\" sizes=\"(max-width: 480px) 480px, (max-width: 760px) max(480px, calc(100vw - 32px)…\">",
+        "type": "node"
+      }
+    ],
+    "type": "list"
+  }
+}

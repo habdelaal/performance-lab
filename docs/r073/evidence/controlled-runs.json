@@ -1,0 +1,2058 @@
+[
+  {
+    "round": 1,
+    "mode": "baseline_full",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2104,
+      "lcp": 2104,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1458,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1751.699999999997,
+          "duration": 67
+        },
+        {
+          "start": 1871.2999999999884,
+          "duration": 197
+        },
+        {
+          "start": 2116.199999999997,
+          "duration": 61
+        },
+        {
+          "start": 2805.0999999999913,
+          "duration": 53
+        },
+        {
+          "start": 5966.6999999999825,
+          "duration": 245
+        },
+        {
+          "start": 6218.600000000006,
+          "duration": 65
+        },
+        {
+          "start": 6285,
+          "duration": 149
+        },
+        {
+          "start": 6892.5,
+          "duration": 57
+        },
+        {
+          "start": 7204.5,
+          "duration": 364
+        },
+        {
+          "start": 7622.799999999988,
+          "duration": 363
+        },
+        {
+          "start": 7999.1999999999825,
+          "duration": 455
+        },
+        {
+          "start": 8755.600000000006,
+          "duration": 146
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.269904,
+      "RecalcStyleDuration": 0.063242,
+      "ScriptDuration": 1.884313,
+      "TaskDuration": 3.097253
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_full",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1128,
+      "lcp": 1312,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1585,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2544.5,
+      "longTasks": [
+        {
+          "start": 537.4000000000233,
+          "duration": 94
+        },
+        {
+          "start": 768.7000000000116,
+          "duration": 317
+        },
+        {
+          "start": 1161.5,
+          "duration": 102
+        },
+        {
+          "start": 2060.7000000000116,
+          "duration": 53
+        },
+        {
+          "start": 2545.4000000000233,
+          "duration": 157
+        },
+        {
+          "start": 5406.5,
+          "duration": 253
+        },
+        {
+          "start": 5663.3000000000175,
+          "duration": 65
+        },
+        {
+          "start": 5734.900000000023,
+          "duration": 138
+        },
+        {
+          "start": 6329,
+          "duration": 63
+        },
+        {
+          "start": 6645.8000000000175,
+          "duration": 394
+        },
+        {
+          "start": 7098,
+          "duration": 358
+        },
+        {
+          "start": 7459.8000000000175,
+          "duration": 431
+        },
+        {
+          "start": 8123.700000000012,
+          "duration": 121
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.523967,
+      "RecalcStyleDuration": 0.072904,
+      "ScriptDuration": 1.96622,
+      "TaskDuration": 3.630357
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "baseline_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2088,
+      "lcp": 2088,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 394,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1735.1999999999825,
+          "duration": 66
+        },
+        {
+          "start": 1856.6999999999825,
+          "duration": 193
+        },
+        {
+          "start": 2079.1999999999825,
+          "duration": 63
+        },
+        {
+          "start": 2780.7999999999884,
+          "duration": 54
+        },
+        {
+          "start": 7238,
+          "duration": 357
+        },
+        {
+          "start": 7977.1999999999825,
+          "duration": 133
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.264979,
+      "RecalcStyleDuration": 0.060769,
+      "ScriptDuration": 0.470558,
+      "TaskDuration": 1.399515
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 1,
+    "mode": "critical_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1104,
+      "lcp": 1104,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 500,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2443.1999999999825,
+      "longTasks": [
+        {
+          "start": 464.1000000000058,
+          "duration": 60
+        },
+        {
+          "start": 773.3999999999942,
+          "duration": 285
+        },
+        {
+          "start": 1103.1000000000058,
+          "duration": 99
+        },
+        {
+          "start": 2444.6999999999825,
+          "duration": 143
+        },
+        {
+          "start": 6666.1999999999825,
+          "duration": 374
+        },
+        {
+          "start": 7420.1999999999825,
+          "duration": 133
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.474587,
+      "RecalcStyleDuration": 0.070532,
+      "ScriptDuration": 0.542639,
+      "TaskDuration": 1.818647
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 1,
+    "mode": "baseline_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2128,
+      "lcp": 2128,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 991,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1781.2999999999884,
+          "duration": 65
+        },
+        {
+          "start": 1899.5,
+          "duration": 190
+        },
+        {
+          "start": 5982.299999999988,
+          "duration": 239
+        },
+        {
+          "start": 6225.099999999977,
+          "duration": 63
+        },
+        {
+          "start": 6289.599999999977,
+          "duration": 122
+        },
+        {
+          "start": 6868,
+          "duration": 58
+        },
+        {
+          "start": 7229.299999999988,
+          "duration": 385
+        },
+        {
+          "start": 7621,
+          "duration": 424
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.265129,
+      "RecalcStyleDuration": 0.065412,
+      "ScriptDuration": 1.457944,
+      "TaskDuration": 2.42795
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "critical_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1124,
+      "lcp": 1124,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1116,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2522.4000000000233,
+      "longTasks": [
+        {
+          "start": 455.1000000000058,
+          "duration": 56
+        },
+        {
+          "start": 796.3000000000175,
+          "duration": 284
+        },
+        {
+          "start": 1132.5,
+          "duration": 91
+        },
+        {
+          "start": 2055.3000000000175,
+          "duration": 56
+        },
+        {
+          "start": 2523.7000000000116,
+          "duration": 146
+        },
+        {
+          "start": 5391.900000000023,
+          "duration": 242
+        },
+        {
+          "start": 5640.3000000000175,
+          "duration": 60
+        },
+        {
+          "start": 5701.900000000023,
+          "duration": 132
+        },
+        {
+          "start": 6288.400000000023,
+          "duration": 62
+        },
+        {
+          "start": 6639.900000000023,
+          "duration": 347
+        },
+        {
+          "start": 7000.700000000012,
+          "duration": 430
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.474516,
+      "RecalcStyleDuration": 0.070397,
+      "ScriptDuration": 1.483144,
+      "TaskDuration": 2.701484
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "mode": "baseline_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2128,
+      "lcp": 2128,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 4,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1775.7000000000116,
+          "duration": 66
+        },
+        {
+          "start": 1893.2000000000116,
+          "duration": 194
+        },
+        {
+          "start": 2118.3000000000175,
+          "duration": 59
+        },
+        {
+          "start": 2825.899999999994,
+          "duration": 54
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.270228,
+      "RecalcStyleDuration": 0.057277,
+      "ScriptDuration": 0.098977,
+      "TaskDuration": 0.863845
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 1,
+    "mode": "critical_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1112,
+      "lcp": 1112,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 151,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2463.7000000000116,
+      "longTasks": [
+        {
+          "start": 480.30000000001746,
+          "duration": 58
+        },
+        {
+          "start": 791.1000000000058,
+          "duration": 286
+        },
+        {
+          "start": 1120.6000000000058,
+          "duration": 91
+        },
+        {
+          "start": 2048.3000000000175,
+          "duration": 54
+        },
+        {
+          "start": 2412.100000000006,
+          "duration": 51
+        },
+        {
+          "start": 2464.5,
+          "duration": 155
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.481037,
+      "RecalcStyleDuration": 0.068003,
+      "ScriptDuration": 0.156104,
+      "TaskDuration": 1.262892
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 2,
+    "mode": "critical_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1124,
+      "lcp": 1124,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 120,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2502.100000000035,
+      "longTasks": [
+        {
+          "start": 446.30000000004657,
+          "duration": 58
+        },
+        {
+          "start": 819.4000000000233,
+          "duration": 256
+        },
+        {
+          "start": 2047.2000000000116,
+          "duration": 53
+        },
+        {
+          "start": 2449.8000000000466,
+          "duration": 52
+        },
+        {
+          "start": 2503.3000000000466,
+          "duration": 165
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.393665,
+      "RecalcStyleDuration": 0.07038,
+      "ScriptDuration": 0.156893,
+      "TaskDuration": 1.161514
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 2,
+    "mode": "baseline_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2132,
+      "lcp": 2132,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 6,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1758.7000000000116,
+          "duration": 67
+        },
+        {
+          "start": 1881.2000000000116,
+          "duration": 212
+        },
+        {
+          "start": 2129.399999999965,
+          "duration": 62
+        },
+        {
+          "start": 2833.7999999999884,
+          "duration": 56
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.285114,
+      "RecalcStyleDuration": 0.0688,
+      "ScriptDuration": 0.104317,
+      "TaskDuration": 0.933217
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 2,
+    "mode": "critical_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1132,
+      "lcp": 1132,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1176,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2484.2999999999884,
+      "longTasks": [
+        {
+          "start": 490.79999999998836,
+          "duration": 60
+        },
+        {
+          "start": 789,
+          "duration": 306
+        },
+        {
+          "start": 1158.7999999999884,
+          "duration": 100
+        },
+        {
+          "start": 2060.5999999999767,
+          "duration": 54
+        },
+        {
+          "start": 2485.399999999965,
+          "duration": 146
+        },
+        {
+          "start": 5384.699999999953,
+          "duration": 232
+        },
+        {
+          "start": 5621.099999999977,
+          "duration": 59
+        },
+        {
+          "start": 5681.899999999965,
+          "duration": 129
+        },
+        {
+          "start": 6291.299999999988,
+          "duration": 68
+        },
+        {
+          "start": 6605.5,
+          "duration": 384
+        },
+        {
+          "start": 6995.399999999965,
+          "duration": 454
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.501423,
+      "RecalcStyleDuration": 0.064948,
+      "ScriptDuration": 1.59267,
+      "TaskDuration": 2.951787
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "baseline_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2096,
+      "lcp": 2096,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 950,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1754.2999999999884,
+          "duration": 63
+        },
+        {
+          "start": 1827.5999999999767,
+          "duration": 233
+        },
+        {
+          "start": 5958.099999999977,
+          "duration": 226
+        },
+        {
+          "start": 6188.5,
+          "duration": 61
+        },
+        {
+          "start": 6250.899999999965,
+          "duration": 121
+        },
+        {
+          "start": 6829,
+          "duration": 54
+        },
+        {
+          "start": 7182,
+          "duration": 369
+        },
+        {
+          "start": 7559.099999999977,
+          "duration": 419
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.2685,
+      "RecalcStyleDuration": 0.063712,
+      "ScriptDuration": 1.414779,
+      "TaskDuration": 2.369411
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "critical_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1124,
+      "lcp": 1124,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 504,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2476.9000000000233,
+      "longTasks": [
+        {
+          "start": 416.80000000004657,
+          "duration": 55
+        },
+        {
+          "start": 790,
+          "duration": 269
+        },
+        {
+          "start": 1106.9000000000233,
+          "duration": 100
+        },
+        {
+          "start": 2021.4000000000233,
+          "duration": 51
+        },
+        {
+          "start": 2477.100000000035,
+          "duration": 148
+        },
+        {
+          "start": 6655.400000000023,
+          "duration": 368
+        },
+        {
+          "start": 7402.300000000047,
+          "duration": 137
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.467654,
+      "RecalcStyleDuration": 0.073474,
+      "ScriptDuration": 0.521022,
+      "TaskDuration": 1.770574
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 2,
+    "mode": "baseline_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2088,
+      "lcp": 2088,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 403,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1758.5999999999767,
+          "duration": 64
+        },
+        {
+          "start": 1873.4000000000233,
+          "duration": 181
+        },
+        {
+          "start": 2079.7999999999884,
+          "duration": 57
+        },
+        {
+          "start": 2775.4000000000233,
+          "duration": 57
+        },
+        {
+          "start": 7239.5,
+          "duration": 362
+        },
+        {
+          "start": 7981.700000000012,
+          "duration": 134
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.257026,
+      "RecalcStyleDuration": 0.060311,
+      "ScriptDuration": 0.460707,
+      "TaskDuration": 1.401968
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 2,
+    "mode": "critical_full",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1108,
+      "lcp": 1108,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1463,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2512,
+      "longTasks": [
+        {
+          "start": 480.79999999998836,
+          "duration": 57
+        },
+        {
+          "start": 768.0999999999767,
+          "duration": 312
+        },
+        {
+          "start": 1149.2999999999884,
+          "duration": 102
+        },
+        {
+          "start": 2459,
+          "duration": 53
+        },
+        {
+          "start": 2513,
+          "duration": 141
+        },
+        {
+          "start": 5383.200000000012,
+          "duration": 240
+        },
+        {
+          "start": 5628.200000000012,
+          "duration": 61
+        },
+        {
+          "start": 5690.599999999977,
+          "duration": 142
+        },
+        {
+          "start": 6287.799999999988,
+          "duration": 63
+        },
+        {
+          "start": 6609.899999999965,
+          "duration": 352
+        },
+        {
+          "start": 7027.299999999988,
+          "duration": 322
+        },
+        {
+          "start": 7360.899999999965,
+          "duration": 415
+        },
+        {
+          "start": 8009.599999999977,
+          "duration": 122
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.502082,
+      "RecalcStyleDuration": 0.068652,
+      "ScriptDuration": 1.823582,
+      "TaskDuration": 3.313916
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "mode": "baseline_full",
+    "excluded": true,
+    "errorCount": 1,
+    "vendorMissCount": 1,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2116,
+      "lcp": 2116,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1338,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1767.100000000035,
+          "duration": 65
+        },
+        {
+          "start": 1843.5,
+          "duration": 234
+        },
+        {
+          "start": 5971.5,
+          "duration": 235
+        },
+        {
+          "start": 6210.900000000023,
+          "duration": 67
+        },
+        {
+          "start": 6279.100000000035,
+          "duration": 136
+        },
+        {
+          "start": 6871.400000000023,
+          "duration": 55
+        },
+        {
+          "start": 7191.600000000035,
+          "duration": 360
+        },
+        {
+          "start": 7607.100000000035,
+          "duration": 344
+        },
+        {
+          "start": 7961.400000000023,
+          "duration": 422
+        },
+        {
+          "start": 8627.5,
+          "duration": 119
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.26745,
+      "RecalcStyleDuration": 0.061494,
+      "ScriptDuration": 1.813266,
+      "TaskDuration": 2.936489
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "baseline_full",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2064,
+      "lcp": 2064,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1351,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1722.1999999999534,
+          "duration": 64
+        },
+        {
+          "start": 1839.7999999999884,
+          "duration": 187
+        },
+        {
+          "start": 2066.6999999999534,
+          "duration": 55
+        },
+        {
+          "start": 2759.2999999999884,
+          "duration": 57
+        },
+        {
+          "start": 5919.5,
+          "duration": 239
+        },
+        {
+          "start": 6163,
+          "duration": 61
+        },
+        {
+          "start": 6225.899999999965,
+          "duration": 130
+        },
+        {
+          "start": 6809.599999999977,
+          "duration": 54
+        },
+        {
+          "start": 7146.099999999977,
+          "duration": 367
+        },
+        {
+          "start": 7574.899999999965,
+          "duration": 358
+        },
+        {
+          "start": 7938.899999999965,
+          "duration": 410
+        },
+        {
+          "start": 8587.599999999977,
+          "duration": 120
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.258668,
+      "RecalcStyleDuration": 0.064202,
+      "ScriptDuration": 1.793434,
+      "TaskDuration": 2.872429
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_full",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1120,
+      "lcp": 1120,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1385,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2484.2000000000116,
+      "longTasks": [
+        {
+          "start": 460.70000000001164,
+          "duration": 54
+        },
+        {
+          "start": 782.7999999999884,
+          "duration": 304
+        },
+        {
+          "start": 1154.2000000000116,
+          "duration": 103
+        },
+        {
+          "start": 2062.2000000000116,
+          "duration": 53
+        },
+        {
+          "start": 2485.5,
+          "duration": 144
+        },
+        {
+          "start": 5373,
+          "duration": 228
+        },
+        {
+          "start": 5604,
+          "duration": 58
+        },
+        {
+          "start": 5663.5,
+          "duration": 127
+        },
+        {
+          "start": 6246.200000000012,
+          "duration": 61
+        },
+        {
+          "start": 6587.900000000023,
+          "duration": 315
+        },
+        {
+          "start": 6951,
+          "duration": 322
+        },
+        {
+          "start": 7280.200000000012,
+          "duration": 406
+        },
+        {
+          "start": 7916.600000000035,
+          "duration": 118
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.488002,
+      "RecalcStyleDuration": 0.069543,
+      "ScriptDuration": 1.730546,
+      "TaskDuration": 3.191169
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "baseline_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2072,
+      "lcp": 2072,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 363,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1743.2000000000116,
+          "duration": 64
+        },
+        {
+          "start": 1817.7000000000116,
+          "duration": 221
+        },
+        {
+          "start": 7234.100000000035,
+          "duration": 337
+        },
+        {
+          "start": 7945.900000000023,
+          "duration": 126
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.252685,
+      "RecalcStyleDuration": 0.062636,
+      "ScriptDuration": 0.437145,
+      "TaskDuration": 1.328726
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 3,
+    "mode": "critical_no_tracking",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1112,
+      "lcp": 1112,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 485,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2487.0999999999767,
+      "longTasks": [
+        {
+          "start": 462.8999999999651,
+          "duration": 54
+        },
+        {
+          "start": 796.5999999999767,
+          "duration": 269
+        },
+        {
+          "start": 1113.7999999999884,
+          "duration": 92
+        },
+        {
+          "start": 2488.6999999999534,
+          "duration": 136
+        },
+        {
+          "start": 6679.5,
+          "duration": 332
+        },
+        {
+          "start": 7375.399999999965,
+          "duration": 125
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.448033,
+      "RecalcStyleDuration": 0.067776,
+      "ScriptDuration": 0.474605,
+      "TaskDuration": 1.677511
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 3,
+    "mode": "baseline_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2092,
+      "lcp": 2092,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 988,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1754.2999999999884,
+          "duration": 65
+        },
+        {
+          "start": 1829.7000000000116,
+          "duration": 223
+        },
+        {
+          "start": 2779.7999999999884,
+          "duration": 51
+        },
+        {
+          "start": 5950.299999999988,
+          "duration": 227
+        },
+        {
+          "start": 6180.399999999965,
+          "duration": 67
+        },
+        {
+          "start": 6249.200000000012,
+          "duration": 127
+        },
+        {
+          "start": 6829.200000000012,
+          "duration": 56
+        },
+        {
+          "start": 7163.799999999988,
+          "duration": 381
+        },
+        {
+          "start": 7549.899999999965,
+          "duration": 429
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.257265,
+      "RecalcStyleDuration": 0.0644,
+      "ScriptDuration": 1.439476,
+      "TaskDuration": 2.332225
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "critical_no_initial",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1120,
+      "lcp": 1120,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 1134,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2495.3000000000466,
+      "longTasks": [
+        {
+          "start": 443.6000000000349,
+          "duration": 56
+        },
+        {
+          "start": 783.4000000000233,
+          "duration": 291
+        },
+        {
+          "start": 1131,
+          "duration": 108
+        },
+        {
+          "start": 2050.3000000000466,
+          "duration": 51
+        },
+        {
+          "start": 2495.600000000035,
+          "duration": 151
+        },
+        {
+          "start": 5380.900000000023,
+          "duration": 232
+        },
+        {
+          "start": 5616.800000000047,
+          "duration": 62
+        },
+        {
+          "start": 5680.600000000035,
+          "duration": 133
+        },
+        {
+          "start": 6266.600000000035,
+          "duration": 64
+        },
+        {
+          "start": 6628.100000000035,
+          "duration": 367
+        },
+        {
+          "start": 7001.400000000023,
+          "duration": 416
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.482442,
+      "RecalcStyleDuration": 0.078128,
+      "ScriptDuration": 1.488838,
+      "TaskDuration": 2.803429
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": [
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtm.js",
+        "sha256": "bbd09e15a2bee476f4f95b379c56a86e60f4eb08a17b83b22e0376a4b11366fb",
+        "bytes": 417662
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/en_US/fbevents.js",
+        "sha256": "0d0a9d9e1166b8c540a4fd8afc397be554a045a86ae76acc8ce98c0b60ecd10b",
+        "bytes": 437138
+      },
+      {
+        "host": "connect.facebook.net",
+        "path": "/signals/config/911231798442990",
+        "sha256": "cf953adda55a39645b4940acc684dce083a8400e5ef106b374c519def42ade93",
+        "bytes": 584696
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "path": "/gtag/js",
+        "sha256": "04e467195c110bf4991dea0e7e88f46700b65879df298e0e7990e556957a6f41",
+        "bytes": 599133
+      },
+      {
+        "host": "www.clarity.ms",
+        "path": "/tag/yjd7x6ecwo",
+        "sha256": "9f993da53a576140a67e0e8e2ccf0e655a3aa49cf3b506a0b53406cd3573bb13",
+        "bytes": 731
+      },
+      {
+        "host": "scripts.clarity.ms",
+        "path": "/0.8.73-beta/clarity.js",
+        "sha256": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3",
+        "bytes": 74411
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "mode": "baseline_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 2132,
+      "lcp": 2132,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 11,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": false,
+      "fullAt": null,
+      "longTasks": [
+        {
+          "start": 1776.1999999999534,
+          "duration": 67
+        },
+        {
+          "start": 1898.0999999999767,
+          "duration": 200
+        },
+        {
+          "start": 2134.1999999999534,
+          "duration": 59
+        },
+        {
+          "start": 2818.1999999999534,
+          "duration": 52
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.26874,
+      "RecalcStyleDuration": 0.062044,
+      "ScriptDuration": 0.094932,
+      "TaskDuration": 0.876676
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  },
+  {
+    "round": 3,
+    "mode": "critical_neither",
+    "excluded": false,
+    "errorCount": 0,
+    "vendorMissCount": 0,
+    "snapshotMissCount": 0,
+    "serverErrorCount": 0,
+    "metrics": {
+      "fcp": 1092,
+      "lcp": 1092,
+      "cls": 0.1111972262019807,
+      "longTaskBlockingAfterFCP": 103,
+      "hero": {
+        "complete": true,
+        "naturalWidth": 480,
+        "x": 16,
+        "y": 538.09375,
+        "w": 380,
+        "h": 200
+      },
+      "fullReady": true,
+      "fullAt": 2540.9000000000233,
+      "longTasks": [
+        {
+          "start": 418.4000000000233,
+          "duration": 57
+        },
+        {
+          "start": 809.5,
+          "duration": 247
+        },
+        {
+          "start": 2018.3000000000466,
+          "duration": 51
+        },
+        {
+          "start": 2541.70000000007,
+          "duration": 152
+        }
+      ]
+    },
+    "cpu": {
+      "LayoutDuration": 0.371023,
+      "RecalcStyleDuration": 0.069655,
+      "ScriptDuration": 0.142407,
+      "TaskDuration": 1.088539
+    },
+    "cssSocketRequests": 1,
+    "vendorScripts": []
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "url": "/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+  "bytes": 2965425,
+  "definition_count": 542,
+  "definition_span_bytes_estimate": [
+    {
+      "owner": "@web",
+      "definitions": 220,
+      "bytes": 904841
+    },
+    {
+      "owner": "eit_live_freight_theme_livechat.assets_initial.bundle.xml",
+      "definitions": 1,
+      "bytes": 581189
+    },
+    {
+      "owner": "@odoo",
+      "definitions": 1,
+      "bytes": 300775
+    },
+    {
+      "owner": "@website",
+      "definitions": 90,
+      "bytes": 288204
+    },
+    {
+      "owner": "@website_sale",
+      "definitions": 48,
+      "bytes": 126392
+    },
+    {
+      "owner": "@html_editor",
+      "definitions": 23,
+      "bytes": 116401
+    },
+    {
+      "owner": "@account",
+      "definitions": 4,
+      "bytes": 77530
+    },
+    {
+      "owner": "@mail",
+      "definitions": 13,
+      "bytes": 66598
+    },
+    {
+      "owner": "@bus",
+      "definitions": 15,
+      "bytes": 41611
+    },
+    {
+      "owner": "@sale",
+      "definitions": 17,
+      "bytes": 37482
+    },
+    {
+      "owner": "@portal",
+      "definitions": 11,
+      "bytes": 29463
+    },
+    {
+      "owner": "@appointment",
+      "definitions": 5,
+      "bytes": 28028
+    },
+    {
+      "owner": "@web_tour",
+      "definitions": 7,
+      "bytes": 26801
+    },
+    {
+      "owner": "@website_links",
+      "definitions": 4,
+      "bytes": 19806
+    },
+    {
+      "owner": "@eit_freight_ecommerce",
+      "definitions": 5,
+      "bytes": 18181
+    },
+    {
+      "owner": "@payment",
+      "definitions": 4,
+      "bytes": 15459
+    },
+    {
+      "owner": "@website_sale_comparison",
+      "definitions": 5,
+      "bytes": 13131
+    },
+    {
+      "owner": "@web_unsplash",
+      "definitions": 6,
+      "bytes": 12288
+    },
+    {
+      "owner": "@auth_passkey",
+      "definitions": 2,
+      "bytes": 12262
+    },
+    {
+      "owner": "@delivery",
+      "definitions": 7,
+      "bytes": 12224
+    },
+    {
+      "owner": "@website_payment",
+      "definitions": 4,
+      "bytes": 11817
+    },
+    {
+      "owner": "@auth_totp_portal",
+      "definitions": 5,
+      "bytes": 9592
+    },
+    {
+      "owner": "@website_sale_wishlist",
+      "definitions": 5,
+      "bytes": 8574
+    },
+    {
+      "owner": "@portal_rating",
+      "definitions": 2,
+      "bytes": 7172
+    },
+    {
+      "owner": "@website_appointment",
+      "definitions": 4,
+      "bytes": 6471
+    },
+    {
+      "owner": "@website_mass_mailing",
+      "definitions": 3,
+      "bytes": 5470
+    },
+    {
+      "owner": "@website_blog",
+      "definitions": 3,
+      "bytes": 5129
+    },
+    {
+      "owner": "@auth_passkey_portal",
+      "definitions": 2,
+      "bytes": 4235
+    },
+    {
+      "owner": "@website_mail",
+      "definitions": 1,
+      "bytes": 3425
+    },
+    {
+      "owner": "@website_hr_recruitment",
+      "definitions": 1,
+      "bytes": 3358
+    },
+    {
+      "owner": "@account_payment",
+      "definitions": 3,
+      "bytes": 3263
+    },
+    {
+      "owner": "@html_builder",
+      "definitions": 1,
+      "bytes": 3261
+    },
+    {
+      "owner": "@mass_mailing",
+      "definitions": 1,
+      "bytes": 3077
+    },
+    {
+      "owner": "@google_recaptcha",
+      "definitions": 2,
+      "bytes": 2755
+    },
+    {
+      "owner": "@eit_live_freight_theme_livechat",
+      "definitions": 2,
+      "bytes": 2654
+    },
+    {
+      "owner": "@survey",
+      "definitions": 1,
+      "bytes": 2363
+    },
+    {
+      "owner": "@eit_freight_crm_web",
+      "definitions": 1,
+      "bytes": 1935
+    },
+    {
+      "owner": "@eit_freight_opportunities_block",
+      "definitions": 1,
+      "bytes": 1911
+    },
+    {
+      "owner": "@im_livechat",
+      "definitions": 1,
+      "bytes": 1784
+    },
+    {
+      "owner": "@purchase",
+      "definitions": 2,
+      "bytes": 1756
+    },
+    {
+      "owner": "@sale_management",
+      "definitions": 1,
+      "bytes": 1635
+    },
+    {
+      "owner": "@account_online_synchronization",
+      "definitions": 1,
+      "bytes": 1624
+    },
+    {
+      "owner": "@website_sale_comparison_wishlist",
+      "definitions": 1,
+      "bytes": 1397
+    },
+    {
+      "owner": "@website_appointment_sale",
+      "definitions": 1,
+      "bytes": 1163
+    },
+    {
+      "owner": "@project",
+      "definitions": 1,
+      "bytes": 1014
+    },
+    {
+      "owner": "@eit_freight_search",
+      "definitions": 1,
+      "bytes": 887
+    },
+    {
+      "owner": "@auth_signup",
+      "definitions": 1,
+      "bytes": 866
+    },
+    {
+      "owner": "@payment_custom",
+      "definitions": 1,
+      "bytes": 568
+    },
+    {
+      "owner": "@eit_website_select2",
+      "definitions": 1,
+      "bytes": 516
+    }
+  ]
+}

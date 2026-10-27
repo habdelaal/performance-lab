@@ -1,0 +1,122 @@
+[
+  {
+    "index": 0,
+    "mode": "fresh_python",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 1,
+    "mode": "fresh_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 2,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 3,
+    "mode": "fresh_python",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 4,
+    "mode": "fresh_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 5,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 6,
+    "mode": "fresh_python",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 7,
+    "mode": "fresh_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 8,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 9,
+    "mode": "fresh_python",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 10,
+    "mode": "fresh_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  },
+  {
+    "index": 11,
+    "mode": "sticky_mobile",
+    "status": 200,
+    "marker": "r069",
+    "cache": "private, no-store",
+    "age": null,
+    "critical_count": 1,
+    "loader_count": 1
+  }
+]

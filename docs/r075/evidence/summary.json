@@ -1,0 +1,178 @@
+{
+  "mobile_full": {
+    "fcp": {
+      "median": 916,
+      "min": 900,
+      "max": 960
+    },
+    "lcp": {
+      "median": 916,
+      "min": 900,
+      "max": 960
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 551,
+      "min": 546,
+      "max": 728
+    }
+  },
+  "mobile_inline_css": {
+    "fcp": {
+      "median": 844,
+      "min": 844,
+      "max": 852
+    },
+    "lcp": {
+      "median": 880,
+      "min": 876,
+      "max": 880
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 614,
+      "min": 609,
+      "max": 649
+    }
+  },
+  "mobile_preload_css": {
+    "fcp": {
+      "median": 796,
+      "min": 792,
+      "max": 820
+    },
+    "lcp": {
+      "median": 832,
+      "min": 832,
+      "max": 856
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 526,
+      "min": 517,
+      "max": 596
+    }
+  },
+  "mobile_meta_manual": {
+    "fcp": {
+      "median": 904,
+      "min": 904,
+      "max": 912
+    },
+    "lcp": {
+      "median": 904,
+      "min": 904,
+      "max": 912
+    },
+    "cls": {
+      "median": 0.1111972262019807,
+      "min": 0.1111972262019807,
+      "max": 0.1111972262019807
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 518,
+      "min": 486,
+      "max": 592
+    }
+  },
+  "desktop_full": {
+    "fcp": {
+      "median": 264,
+      "min": 248,
+      "max": 264
+    },
+    "lcp": {
+      "median": 280,
+      "min": 276,
+      "max": 292
+    },
+    "cls": {
+      "median": 0.001071006326733012,
+      "min": 0.001071006326733012,
+      "max": 0.001071006326733012
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 0,
+      "min": 0,
+      "max": 4
+    }
+  },
+  "desktop_inline_css": {
+    "fcp": {
+      "median": 272,
+      "min": 252,
+      "max": 284
+    },
+    "lcp": {
+      "median": 284,
+      "min": 272,
+      "max": 296
+    },
+    "cls": {
+      "median": 0.001071006326733012,
+      "min": 0.001071006326733012,
+      "max": 0.001071006326733012
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 2,
+      "min": 0,
+      "max": 2
+    }
+  },
+  "desktop_preload_css": {
+    "fcp": {
+      "median": 236,
+      "min": 228,
+      "max": 236
+    },
+    "lcp": {
+      "median": 288,
+      "min": 276,
+      "max": 292
+    },
+    "cls": {
+      "median": 0.001071006326733012,
+      "min": 0.001071006326733012,
+      "max": 0.001071006326733012
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 3,
+      "min": 2,
+      "max": 6
+    }
+  },
+  "desktop_meta_manual": {
+    "fcp": {
+      "median": 252,
+      "min": 236,
+      "max": 256
+    },
+    "lcp": {
+      "median": 272,
+      "min": 272,
+      "max": 280
+    },
+    "cls": {
+      "median": 0.001071006326733012,
+      "min": 0.001071006326733012,
+      "max": 0.001071006326733012
+    },
+    "longTaskBlockingAfterFCP": {
+      "median": 0,
+      "min": 0,
+      "max": 9
+    }
+  }
+}

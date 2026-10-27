@@ -1,0 +1,45 @@
+{
+  "source": "https://www.googletagmanager.com/gtag/js?id=G-BG3PM1BRQZ",
+  "sha256": "1ed1d7fab6c9cf0f409ea99c8985b164d9c260521eb31f3d445bf9b4d6210e0a",
+  "bytes": 599122,
+  "version": "9",
+  "automatic_features": [
+    {
+      "function": "__ogt_auto_events",
+      "priority": 24,
+      "vtp_enableOutboundClick": true,
+      "vtp_enableScroll": true,
+      "vtp_enableDownload": true,
+      "vtp_enableHistoryEvents": true,
+      "vtp_enableForm": true,
+      "vtp_enableVideo": true,
+      "vtp_enablePageView": true,
+      "vtp_enableInPageEventsHidden": false,
+      "tag_id": 13
+    },
+    {
+      "function": "__ogt_1p_data_v2",
+      "priority": 14,
+      "vtp_isAutoEnabled": true,
+      "vtp_isManualEnabled": false,
+      "vtp_autoPhoneEnabled": true,
+      "vtp_autoCollectExclusionSelectors": [
+        "list",
+        [
+          "map",
+          "exclusionSelector",
+          ""
+        ]
+      ],
+      "vtp_isEnabled": true,
+      "vtp_autoAddressEnabled": true,
+      "vtp_autoEmailEnabled": true,
+      "vtp_isAutoCollectPiiEnabledFlag": true,
+      "tag_id": 15
+    }
+  ],
+  "limits": [
+    "Deployed public configuration, not proof of feature-level CPU cost or actual personal-data collection",
+    "Disabling automatic measurement/enhanced data can affect attribution; not a safe default optimization"
+  ]
+}

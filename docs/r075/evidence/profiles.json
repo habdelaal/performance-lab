@@ -1,0 +1,478 @@
+[
+  {
+    "mode": "mobile_full",
+    "errors": [],
+    "byScript": [
+      {
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "ms": 197.573
+      },
+      {
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "ms": 176.01000000000005
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "ms": 161.89000000000001
+      },
+      {
+        "url": "www.googletagmanager.com/gtag/js",
+        "ms": 139.208
+      },
+      {
+        "url": "www.googletagmanager.com/gtm.js",
+        "ms": 105.34700000000002
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/5159927/web.assets_frontend_minimal.min.js",
+        "ms": 91.27100000000002
+      },
+      {
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "ms": 52.790000000000006
+      },
+      {
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "ms": 52.13499999999999
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/ff3ec9f/eit_live_freight_insurance_crm.enquiry_assets.min.js",
+        "ms": 6.651
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/f845073/eit_live_freight_theme.tracking.min.js",
+        "ms": 3.9559999999999995
+      },
+      {
+        "url": "v8/LoadTimes",
+        "ms": 1.406
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/967a466/eit_live_freight_core_pages.cargo_assets.min.js",
+        "ms": 1.282
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/79bbae6/eit_live_freight_theme.bootstrap.min.js",
+        "ms": 0.974
+      }
+    ],
+    "topFunctions": [
+      {
+        "name": "Nr",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 97.318
+      },
+      {
+        "name": "startModule",
+        "url": "livefreight-staging.odoo.com/web/assets/1/5159927/web.assets_frontend_minimal.min.js",
+        "line": 50,
+        "ms": 75.11800000000002
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "line": 8626,
+        "ms": 28.449999999999992
+      },
+      {
+        "name": "full",
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "line": 8590,
+        "ms": 21.925999999999995
+      },
+      {
+        "name": "a.__fbeventsModules.a.getFbeventsModules",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 14.543000000000001
+      },
+      {
+        "name": "Ui",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 13.267999999999999
+      },
+      {
+        "name": "",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 131,
+        "ms": 10.14
+      },
+      {
+        "name": "ee",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 41,
+        "ms": 8.844
+      },
+      {
+        "name": "zi",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 7.976
+      },
+      {
+        "name": "",
+        "url": "www.googletagmanager.com/gtag/js",
+        "line": 3,
+        "ms": 7.202000000000001
+      },
+      {
+        "name": "",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 65,
+        "ms": 6.635
+      },
+      {
+        "name": "Nr",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 6.388999999999999
+      },
+      {
+        "name": "start",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 2918,
+        "ms": 6.0889999999999995
+      },
+      {
+        "name": "u",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 408,
+        "ms": 5.999
+      },
+      {
+        "name": "l.Nr",
+        "url": "www.googletagmanager.com/gtag/js",
+        "line": 1231,
+        "ms": 5.864999999999999
+      },
+      {
+        "name": "",
+        "url": "www.googletagmanager.com/gtm.js",
+        "line": 6,
+        "ms": 5.488
+      },
+      {
+        "name": "C",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 408,
+        "ms": 4.984
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 4.428
+      },
+      {
+        "name": "i",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 408,
+        "ms": 4.35
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 1425,
+        "ms": 4.243
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 3337,
+        "ms": 4.128
+      },
+      {
+        "name": "iR",
+        "url": "www.googletagmanager.com/gtag/js",
+        "line": 1169,
+        "ms": 4.119
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 4.041
+      },
+      {
+        "name": "",
+        "url": "www.googletagmanager.com/gtm.js",
+        "line": 266,
+        "ms": 4.015
+      },
+      {
+        "name": "Wi",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 3.892
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 3.63
+      },
+      {
+        "name": "tokenize",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 5053,
+        "ms": 3.5749999999999993
+      },
+      {
+        "name": "Sizzle.tokenize",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 1547,
+        "ms": 3.5650000000000004
+      },
+      {
+        "name": "a.__fbeventsModules.a.getFbeventsModules",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 3.522
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 2,
+        "ms": 3.5090000000000003
+      }
+    ],
+    "eventAttempts": [],
+    "limits": "Sampled wall-time self-attribution; native/unattributed frames omitted; profiling run excluded from performance medians"
+  },
+  {
+    "mode": "desktop_full",
+    "errors": [],
+    "byScript": [
+      {
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "ms": 54.022999999999996
+      },
+      {
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "ms": 42.431000000000004
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "ms": 41.423
+      },
+      {
+        "url": "www.googletagmanager.com/gtag/js",
+        "ms": 34.01
+      },
+      {
+        "url": "www.googletagmanager.com/gtm.js",
+        "ms": 21.303999999999995
+      },
+      {
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "ms": 20.939
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/5159927/web.assets_frontend_minimal.min.js",
+        "ms": 19.457
+      },
+      {
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "ms": 14.084
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/ff3ec9f/eit_live_freight_insurance_crm.enquiry_assets.min.js",
+        "ms": 5.986
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/967a466/eit_live_freight_core_pages.cargo_assets.min.js",
+        "ms": 2.172
+      },
+      {
+        "url": "livefreight-staging.odoo.com/web/assets/1/f845073/eit_live_freight_theme.tracking.min.js",
+        "ms": 1.071
+      }
+    ],
+    "topFunctions": [
+      {
+        "name": "Nr",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 23.9
+      },
+      {
+        "name": "startModule",
+        "url": "livefreight-staging.odoo.com/web/assets/1/5159927/web.assets_frontend_minimal.min.js",
+        "line": 50,
+        "ms": 16.131999999999998
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "line": 8626,
+        "ms": 6.536
+      },
+      {
+        "name": "full",
+        "url": "livefreight-staging.odoo.com/cargo-insurance-egypt",
+        "line": 8590,
+        "ms": 5.397
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/ff3ec9f/eit_live_freight_insurance_crm.enquiry_assets.min.js",
+        "line": 29,
+        "ms": 4.92
+      },
+      {
+        "name": "Nr",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 4.492
+      },
+      {
+        "name": "",
+        "url": "www.googletagmanager.com/gtag/js",
+        "line": 3,
+        "ms": 3.336
+      },
+      {
+        "name": "a.__fbeventsModules.a.getFbeventsModules",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 3.1929999999999996
+      },
+      {
+        "name": "Ui",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 3.192
+      },
+      {
+        "name": "u",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 408,
+        "ms": 3.012
+      },
+      {
+        "name": "normalizeValues",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 237,
+        "ms": 3.011
+      },
+      {
+        "name": "d",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 247,
+        "ms": 2.951
+      },
+      {
+        "name": "gK.getValue",
+        "url": "www.googletagmanager.com/gtag/js",
+        "line": 1003,
+        "ms": 2.509
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 2.339
+      },
+      {
+        "name": "start",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 2.188
+      },
+      {
+        "name": "a",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 408,
+        "ms": 2.15
+      },
+      {
+        "name": "d",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 2.136
+      },
+      {
+        "name": "",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 131,
+        "ms": 2.127
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 1622,
+        "ms": 2.114
+      },
+      {
+        "name": "a.__fbeventsModules.a.getFbeventsModules",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 2.11
+      },
+      {
+        "name": "Y",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 114,
+        "ms": 2.079
+      },
+      {
+        "name": "z",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 205,
+        "ms": 2.004
+      },
+      {
+        "name": "",
+        "url": "livefreight-staging.odoo.com/web/assets/1/967a466/eit_live_freight_core_pages.cargo_assets.min.js",
+        "line": 2,
+        "ms": 1.984
+      },
+      {
+        "name": "getAll",
+        "url": "livefreight-staging.odoo.com/web/assets/1/31ecc39/eit_live_freight_theme_livechat.assets_initial.min.js",
+        "line": 5141,
+        "ms": 1.952
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 1.883
+      },
+      {
+        "name": "a.__fbeventsModules.a.getFbeventsModules",
+        "url": "connect.facebook.net/en_US/fbevents.js",
+        "line": 23,
+        "ms": 1.822
+      },
+      {
+        "name": "L",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 306,
+        "ms": 1.608
+      },
+      {
+        "name": "",
+        "url": "www.googletagmanager.com/gtm.js",
+        "line": 668,
+        "ms": 1.556
+      },
+      {
+        "name": "k",
+        "url": "connect.facebook.net/signals/config/911231798442990",
+        "line": 322,
+        "ms": 1.505
+      },
+      {
+        "name": "",
+        "url": "scripts.clarity.ms/0.8.73-beta/clarity.js",
+        "line": 1,
+        "ms": 1.375
+      }
+    ],
+    "eventAttempts": [],
+    "limits": "Sampled wall-time self-attribution; native/unattributed frames omitted; profiling run excluded from performance medians"
+  }
+]

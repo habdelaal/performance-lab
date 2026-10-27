@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "lighthouse": "13.5.0",
+    "chrome-launcher": "1.2.1"
+  }
+}
